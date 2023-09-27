@@ -38,14 +38,15 @@ if you dont edit your path, your script folder must look like this:
 
 [<img src="https://i.ibb.co/xJFzDvj/folder-look.jpg">](https://github.com/R3S3t9999/DoVi_Scripts/releases)
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 MODE.I (1) =
 - Can do all the extracting parsing and injecting/ editing of two input sources.
 - One  base layer input and one P5/P8/P7/HDR10plus input (MKV/MP4/HEVC/TS/M2TS/RPU/XML/JSON).
 - Can resync, edit L5/L6/source max-min_pq, can convert the profile to p8. Make hybrid
 - Add "P5BL" in the filename for P5 to P5 injection.
-:------------------------------------------------------------------------------------------------------------------------------------------------------
+- 
+:--------------------------------------------------------------------------------------------------------------------------
 
 MODE.F (2) =
 - Can get info(fel or mel, profile, l1/l2/l5) from any DV source as well as extract and fix any rpu that has editing errors.
@@ -60,7 +61,7 @@ MODE.F (2) =
 - Can tonemap pgs subtitles to different brightness
 - Input must be a DV P5/P7/P8 file. (MKV/MP4/HEVC/TS/M2TS/RPU/).
 
-:------------------------------------------------------------------------------------------------------------------------------------------------------
+:-------------------------------------------------------------------------------------------------------------------------
 
 MODE.H (3) =
 - Can convert any HDR10plus or HDR10 source to shot-by-shot or frame-by-frame DoVi.
@@ -71,59 +72,67 @@ MODE.H (3) =
 - can make CMV4.0 metadata, no fake static stuff...
 - can batch and use external files for L5 and MD, and shot list
 
-:------------------------------------------------------------------------------------------------------------------------------------------------------
+:------------------------------------------------------------------------------------------------------------------------
 
 MODE.7 (4) = Can convert any Profile 7 source(BD or rip) to single-layer Profile 8 or Profile 7 single-track dual-layers.
 
-:------------------------------------------------------------------------------------------------------------------------------------------------------
+:------------------------------------------------------------------------------------------------------------------------
 
 MODE.B (5) = Can batch mux any DV source.
 MKV/MP4 to TS
 TS/MP4 to MKV
 MKV/TS to MP4
 
-:------------------------------------------------------------------------------------------------------------------------------------------------------
+:-----------------------------------------------------------------------------------------------------------------------
 
 MODE.P (6) =
-- can plot DV(L1/L2/L5/L6), hdr10, hdr10plus, video bitrate,
+- can plot DV(L1/L2/L5/L6), hdr10, hdr10plus, video bitrate
 
-:------------------------------------------------------------------------------------------------------------------------------------------------------
+:----------------------------------------------------------------------------------------------------------------------
 
 MODE.S (7) =
 - can export screenshots (FEL P5 HDR10 SDR ETC) fully automated or manual modes
+- can play FEL + BL or Profile 5 DV in HDR10 or SDR with madVR+MPC
+- can export HDR heatmap and gamut visualization 
 
-:------------------------------------------------------------------------------------------------------------------------------------------------------
+:---------------------------------------------------------------------------------------------------------------------
 MODE.M (8) =
 - Can remove hdr10plus/DV,
 - can convert audio,
 - can find bd playlist,
 - can inject HDR10plus,
-- can play P5/HDR10 movies in SDR/HDR10
 - can make 5min samples
-- can encode bake fel to HDR10
-- can export screenshots
+- can encode bake fel to HDR10/P8
 - can encode DV to SDR using 100nits trim pass
 
-
-   L5 active area:
+  L5 active area and cropping:
+  
   a-) if the base layer is 16:9 (no black bars, fullscreen): set L5 to 0
-  b-) if the base layer is 16:9 but has black bars: measure the BL letterbox and adjust L5 accordingly.                                                                                                                                     	 
+  
+  b-) if the base layer is 16:9 but has black bars: measure the BL letterbox and adjust L5 accordingly.
+                                                                                                                                     	 
   c-) if the base layer is cropped set L5 to 0
  
   Example 1:
-  -------------------------------------------------------------------
+  
   input= 3840x2160p with active area of 2.40 (16:9 with black bars)
+  
   L5 offsets= Left:0 Right:0 Top:280 Bottom:280
+  
   -------------------------------------------------------------------
  
   Example 2:
-  -------------------------------------------------------------------
+
   input= 3840x2160p with active area of 1.78 (16:9 no black bars)
+  
   L5 offsets= Left:0 Right:0 Top:0 Bottom:0
+  
   -------------------------------------------------------------------
  
   Example 3:
-  -------------------------------------------
+
   input= 3840x1600p (cropped)
+  
   L5 offsets= Left:0 Right:0 Top:0 Bottom:0
+  
   -------------------------------------------
