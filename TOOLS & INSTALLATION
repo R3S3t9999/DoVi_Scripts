@@ -4,6 +4,8 @@
 
 :: You can change the output path: Example: " set output_path=D:\Video.Folder\ "
 
+:: You can change the output path Example: "set temp_folder=F:\TEMP.folder" but know that each workflow will delete whatever path you set when the job is done. So dont put a temp like C:\ or C:\Users\username\Documents
+
 :: You can use an external settings file, see the example below
 
 :: Click on the DoVi_Scripts.bat, select a mode, a workflow, drag and drop input, and wait...
