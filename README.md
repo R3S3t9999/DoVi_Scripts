@@ -28,6 +28,10 @@ config file(L5 - MD)example for 3-1: https://drive.google.com/file/d/1cxGCIvP0qn
 
 Settings file example: https://drive.google.com/file/d/1u8Q_drQp2CdWpqZwHfdLuvHkPoVLcOf-/view?usp=drive_link
 
+if you dont edit your path, your script folder must look like this:
+
+![Screenshot](folder.look.jpg)
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 MODE.I (1) =
