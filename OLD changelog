@@ -1,0 +1,566 @@
+RELEASE NOTES:
+
+
+1.9.5
+- added audio support in (7-5-4)(7-5-3).... so now if your PC can handle it, you can watch FEL and P5 videos in MPC + madVR
+- 6-2 can now measure Profile 5 DV with madvr(slow) and added an option to plot only max_pq (line 135)
+- bugfix: fix the L2L3L8L5L6 plot bug introduced in the last version when the output path is not on at the drive root.
+- bugfix: MP4 version batch muxer(5) processed the video two times
+
+1.9.4
+- merged the external path and settings together. The external settings file should now be like this:https://drive.google.com/file/d/1u8Q_drQp2CdWpqZwHfdLuvHkPoVLcOf-/view?usp=drive_link 
+- NEW workflow (7-5) that can play FEL or P5 with madvr + MPC and moved the MPV workflow into (7). Need mpc folder: https://www.videohelp.com/software/Media-Player-Classic-Home-Cinema  (need to be the portable version) This is only for exporting screenshots with madvr because there won't be any audio support here.
+- (7) bugfix in screenshot menu order
+- added an option for force multi-thread in dovi baker at line 127(modify it according to your CPU): default = set Prefetch=Prefetch(8)
+
+1.9.3
+-- Merged all the mp4muxer workflows and improved multi-track support. You'll want to turn off 7.1 EC3 encoding since the newest mp4box can’t mux them properly (old mp4box  works fine).
+-- set container=MP4:  added an option to force the mp4muxer for some EC3 tracks that cant be muxed in mp4box (line 64) default=NO
+-- set container=MP4: this mp4muxer version is now required: https://github.com/bbeny123/mp4muxer/releases
+-- set container=MP4: MP4BOX must be updated to the latest version https://www.videohelp.com/software/MP4Box
+-- moved plotter and screenshot maker on the main menu.
+- (3-1) auto-fix rpu input when the first frame doesnt start with a scene cut.
+- (3-1) frame by frame can now be triggered at line 104 set force.FBF=YES  Default = NO
+- (7-4) now supports P5 input (cropped input not supported for the heatmap)
+- (7-3) Speed improvement for P5 input and no longer requires a Vulkan GPU.
+- (7-1) Line 130 Can now be forced to use ffms2 for those who dont have an Nvidia GPU. For some reason, avspmod need to parse all the frame 1 time so be patient. Better than nothing i guess…. (default = NO)
+-- (3-1)(3-2) merged together. 
+-- (1-1)(3-1) if the rpu (input 2) and the BL (input 1) have the same filename/path, it will be automatically used.
+-- (3-1)(2-1-2) can now use external config bat Files for L5 and MD must have the same name/folder as the input example: 
+https://drive.google.com/file/d/1cxGCIvP0qnhTzwIb_Up-BsQXrHGMwuM6/view?usp=drive_link 
+-- You do not have to change your paths/settings every update anymore, the script can now use external bat files for paths and settings(must be tools\PATHS.bat and tools\SETTINGS.bat)
+ (examples: https://drive.google.com/file/d/1gMiiObwZ7uWJDW3PzcS9FlWm4UNa5Qk6/view?usp=drive_link  / https://drive.google.com/file/d/10A6nckce6Ma0waLARKHL3yWB4_jwLR2q/view?usp=drive_link  see 1.9.4
+-- 6-4 can now batch plot
+-- you can now associate the rpu file (or any dv file) to the script.bat and it will launch (2-3 quick dv info) if you click on any rpu. You can drag and drop any file on the bat file as well. https://i.ibb.co/TwpkB3q/u-XDEc-Yy-Sh-Y.gif
+
+
+1.9.2 
+-- 6-2-2 HDR10 plotter can now batch process as many files as you want.
+-- 3-1 cm_analyze will now use madvr scene cuts if no dynamic metadata is provided (can still do frame by frame)
+-- 3-1 cm_analyze can be forced to use the CPU (line 64 set CM_CPU=YES)
+-- NEW workflow: 3-2 cm_analyze batch convert HDR10 to DV only with existing shot list(or generate one with madvr) or frame by frame.
+-- NEW (5)(2-1-2)(2-1-5)(3-4)(3-2) batch workflows can now input a folder with files instead of each file one by one. Make sure only the files you want to process are in the folder because the script will try to process ANY file in that folder.
+-- NEW (5)(2-1-2)(2-1-5)(3-4)(3-2)(6-2-2) batch workflows : removed the 13 files limit. Now can batch-process as many files as you want
+-- NEW cm_offline workflow (6-9-1) that can export the 100nits trim pass from DV(P8 or P7) using Dolby CM_offline official tool. Can also downscale to 1080p to save time/space. https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools
+-- NEW (2-9) workflow to reduce pgs subtitles brightness (percentage can be configured at line 84) require: https://www.videohelp.com/download/BDSup2Sub512.jar  and  https://github.com/quietvoid/subtitle_tonemap/releases
+-- Support improvement for those who use the script on a Windows drive C:\ (excluding mp4 workflows which I rarely touch)
+-- Support improvement for when the script folder is placed in a path with space or special characters.  (excluding mp4 workflows which i rarely touch)
+-- bug fix : 3-1 only external shot list worked.
+-- code clean up/optimization (I hope this did not introduce new typo)
+
+1.9.1
+--  P7 to P8 workflows: added a warning about expanded brightness if you try to convert an FEL RPU to P8
+-- (6-8-3) added a manual option.
+-- (3-1) Can now use external shots list input (from rpu - xml - hdr10plus json - text file) CM_Analyze and Metafier must be updated to the latest version.
+-- (3-1) Can now use prores file input
+-- (3-1) L1 analysis can now be tuned(line 62) and it uses the new 2023 Dolby algo(brighter outcomes) which makes it probably better than Resolve 18.5 which still uses the old legacy mode (darker outcomes).
+-- Bugfix: 6-6-2 didn't work
+
+1.9.0
+-- (3-1) New workflow that can generate DV using the dolby vision algo. (frame by frame or shot by shot)
+-- (6-8-3) can now be configured to export as many screenshots as you want(line 72) and speed is improved greatly (except for P5 input)
+-- (6-8-2) can now be configured to export as many screenshots as you want.(line 72)
+-- (6-8-2) will now create heat/gamut map as well.
+-- Bugfix:(1-2) Forgot to update the metafier L2 trims remover in the latest version.
+-- Bugfix:(3-2) Typo in the auto detectborders script.
+-- Bugfix:(6-1) HDR10plus remover didnt work
+
+1.8.9
+-- (1-1) (line 50) can now choose to remove or keep any L2 trims. Mefafier required. (only for XML input.)
+-- (6-2-7) added SDR heatmap. Input must be 2160p png or tif  new file needed (place it in the heatmap folder)
+-- (6-2-7) added Gamut map. Input must be 2160p png or tif  new file needed (place it in the heatmap folder)
+– (6-8-4) New workflow that can export as many screenshots(line 70) as you want and will create and heat/gamut map + dv plot. New file needed (place it in the heatmap folder) require the same python modules as 6-2-7
+-- (6-8-3) no more sdr tone mapping for HDR10/P5 screenshots maker (PQ only).
+
+1.8.8
+-- added HDR heatmap maker (6-2-7) new files needed
+-- bugfix.. typo in (2-7)when i switched to ffms2... avs script is missing: '' ''
+
+1.8.7
+-- (6-8-3) libplacebo is now set to peak_detect=false and I fixed the unreadable tiff
+-- (6-8-3) When input is not P5, the script will now index which will speed up a lot the screenshot extraction.
+-- (6-9) can now encode/bake FEL P7 to P8/HDR10/SDR. Can still do HLG/P5 to HDR10/SDR
+-- New tool needed (ffms2 x64 folder) for (6-8-3)(2-7)(2-4)(2-5) 
+-- (7-1) Changed P8 mp4 HEV1 to HVC1 for apple compatibility
+-- Bugfix: fixed bitrate plotter 6-2-7 not working on Windows 11
+-- Bugfix: 6-9 was wrongly encoding HDR10 in 8 bit
+– forgot to add rpu cropping for fel to p8(6-9). Fixed in 1.8.7.1.beta
+
+1.8.6
+-- (1-2) batch injector can now do (BL+P8), (BL+XML), (BL+P5_to_p8) but cannot do P5_BL+P5
+-- (2-7) added option to manually check frame difference between two sources (fast from a sample or slow full indexing) (with indexing for accurate frame reading)
+-- (2-5)(2-4) scene cut export for sync verification will now create an avs script for avspmod (with indexing for accurate frame reading)
+– Bugfix: (5) failed to properly detect if the input had lossless audio.
+
+1.8.5
+-- Added L8 trims to rpu summary (2-2)(2-3)
+-- Added an option to remove cmv4.0 for (1-1)(2-1-1) (default= NO) (line 50)
+-- (6-8-1) will now also create a MEL script for direct manual comparison with FEL.
+-- (6-8-2) new workflow that can auto export 5 PQ FEL and MEL screenshots. (input must be MKV ST FEL P7)
+-- (1-1)(2-1)(3-1)(4-2) can now mux to MP4 if line 20 set container=MP4 (limited to the main audio/subs. For more, use the old workflows)
+-- new option at line 24 set mp4_version=NEW… select which mp4muxer version (OLD or NEW) to use for (1-1)(2-1)(3-1)(4-2)
+– 6-2-4 will now also plot L3 L8 if present
+-- Code cleanup
+
+1.8.4
+-- (1-1) added an option to remove(instead of overwriting) L2 600 and 1000nit trims with the Dolby Metafier for resolve xml injection (default= NO)
+-- (2-8) added Dolby Metafier metadata validation workflow (look for positive lift and static metadata or any error)
+-- added L3 and L8 plot (6-2-5)
+-- Bugfix: (1-1)(TS version only)  TS input ,the script didnt mux the right track.
+-- Bugfix: (1-1)(2-1)(3-1)(4-2)(TS version only)  TS + lossy audio input failed to mux to TS
+
+1.8.3
+-- can now plot L5 L6  (6-2-5)
+-- Added DoVi_Baker FEL screenshots workflow (6-8-1) new tools needed (DGindexNV, AvsPmod and DoVi_baker) and you must install avisynth+ and copy the dovi.dll into ''C:\Windows\System32''
+-- Will share the tool pack for a limited time and only for this release.
+
+1.8.2
+--(6-2-4) can now also plot the 100nits trim (off by default) line 54
+--(6-2-4) have the option to auto-scale the graph. (off by default) line 56
+--(6-2-4) slight change in the graph text position and added some rpu info.
+
+1.8.1
+-- (6-2-4) New Workflow that can plot L2 metadata. Only the 600 and 1000nits for now.
+You have to install gnuplot and set the path correctly at line 129
+– (6-8) reduced the frame numbers so it’s considerably faster now to export screenshots from P5 / HDR10
+
+1.8.0
+-- (2-7)  New workflow that can auto-detect the frame difference between two sources.
+This workflow will export the first and middle frames of each shot for 4000 frames and will try to find out the difference but it may not find one or it can be incorrect. It’s better and safer to calculate it with the extracted png frame numbers. New tool is needed for this workflow.
+
+1.7.9
+-- Speed improvement for (6-2-3) and (6-2-4) when input is in a container
+-- Speed improvement for (1-1) and (1-2) when DV input is in a container
+-- bugfix: raw HEVC/HEVC inputs didn't work properly for (1-1)
+
+1.7.8
+-- DGdemux must be updated to the latest version: https://www.rationalqm.us/dgdemux/binaries/DGDemux_1.0.0.65.zip
+-- Added an option to disable the RPU auto-crop for (1-1) (line 43)
+-- Speed improvement for the rpu extractor (2-2) and sync verification (2-4)
+-- bugfix (1-2) batch p5 to p8 was broken since 1.7.6
+
+
+1.7.7
+-- HDR10plus_tool and Dovi_tool must be updated to the latest version (hdr10plus to DV was totally wrong with the old dovi_tool) I suggest you re-do any HDR10plus to DV conversion you did with the old dovi_tool. see: https://slow.pics/c/G6OH6k9p
+-- HDR10plus plotter no longer requires python
+-- NEW (7-1-1)(7-2-1)(7-2-2) MP4muxer workflows can now encode 7.1 EC3 audio.
+-- NEW workflow that can batch remove CMV4.0 metadata block (2-1-6):
+most of the CMV4.0 movies only have a L8 100nits trims and L2 has no effect on CMV4.0 device(shield, firestick ,appletv, tv internal). Movies Anywhere M3GAN is a good example, the L2 trims makes the image much brighter than HDR10/L1 alone but not on a CMV4.0 device.
+CMV4.0 original: https://drive.google.com/file/d/1lR1u9H ... share_link
+cmv4.0 removed: https://drive.google.com/file/d/1ZqS9Ml ... share_link
+-- bugfix: (2-1-5) batch edit L5 failed after the first file for mkv input
+-- bugfix: (6-3-4) 7.1 encoding didnt work (i dont know when i broke it).
+–  bugfix: workflows that extracted trims to a text file had a typo and could crash the script.
+-- Code cleanup
+
+1.7.6
+- bugfix: Workflows that were converting P7 ST mkv to P8 could not delete the temp folder when the script was done.
+- bugfix: 7.1 encoding failed if the output_path was not on the same drive as the script.
+- 7.1 EAE encoding: when the process is done, it will now auto-kill the EasyAudioEncoder.exe
+- (4-2) (4-3) added a code to stop the script if the user input a file without profile 7 metadata
+- (1-1) can now mux to MP4 if line 19 ===> set container=MP4
+- (7-2) can now mux up to 7 audio and 40 subs regardless of the track language/type.
+- (7-1) can now mux up to 7 audio and 40 subs regardless of the track language/type.
+- (7-1) merged most of the workflows as I did a while ago with (7-2)
+- (7-1) bugfix: P5 Movies anywhere movie DVH1 mp4 were corrupted.
+- (7) can now mux lossless audio if line 33—> set keep_lossless=YES
+- new tool needed for (7-1) https://github.com/rixtox/mp4dovi/releases/tag/v0.1.1
+- (2-6) added new workflow that can convert RPU to XML and export L2 trims for analysis.
+- new tool needed https://github.com/saindriches/dovi_meta/releases/tag/0.1.0-fix
+- (2-1-1) can now edit L9
+- (6-9) new workflow that can encode P5 to HDR10 or SDR (EXPERIMENTAL and requires Vulkan support.)
+
+1.7.5
+- (5) batch muxer can now mux TS to MKV (preserve DV flags) or MKV/Mp4 to TS as before.
+- (1-1) added plot DV export
+- (1-1) added L5 to the rpu summary
+- bugfix…MKV muxing: the chapters were duplicated when DD+ 5.1 /2.0 audio was encoded
+
+1.7.4
+-- bug fix : (6-2-3) in batch mode could fail with some input missing L5
+-- (1-1) will now use actual maxcll/fall from the L1 metadata for Level 6 when you inject an XML (or if decide to edit L6)
+-- (1-1) moved audio encoding job after the rpu has been processed/injected and you will get a copy of the final rpu before injecting if Keep_rpu=YES
+-- code cleanup, slight speed improvement for (1-1).
+-- do not update tsmuxer to the latest version, it’s broken... The last working version is Nightly build from 2023-01-02-02-15-09
+
+1.7.3
+– You MUST update the Dovi_tool to the latest version.
+-- (6-2-3) (6-2-2) DV plotter now doesnt require python and is 10 times faster. You MUST update the Dovi_tool to the latest version.
+-- added possibility to encode LPCM for all the workflow (was only for 4-1 before) Default = NO . This is for the FireTV stick/cube that transcodes TrueHD and downgrades DTS-7.1 to 5.1.
+-- updated the languages bat file. Instead of ignoring unsupported audio, it will mux them with "und" tag. If you want a proper tag, edit the bat file and add your language.
+- (1-2) Batch P5 to P8 mode can now mux to MKV (will always mux all the audio/subs from input)
+- (1-2) Batch P5 to P8 mode can now mux up to 4 audio and 8 subtitles to TS
+- (1-2) Batch P5 to P8 mode can now accept raw hevc and rpu input
+- (5) batch tsmuxer mode can now mux up to 4 audio / 8 subs (you need to have the language bat in the tool folder)
+- new tool needed (line 122)
+
+1.7.2
+-- Sorry guys, I no longer share the tools pack (legal reason). PM on the makemkv forum if you have issues finding the right software and setting your path.
+– Bugfix: I messed up the MP4BOX workflow menus.
+–-Bugfix: input with invalid L6 didnt work properly
+– added a parameter for when some bluray has a delay (only works if it's a positive delay) (line 47)
+– All the workflows (except BDMV input) can mux all the audio/sub in a MKV container
+– All the workflows (except BDMV input) can mux up to 3 audio 5 subs in a TS container (you need the language.bat file in the tools folder. Not every language is supported.
+-- (1-1) can now inject HDR10plus json (no resync support)
+-- (1-1) can now inject P5 metadata to P5 BL if you put "P5BL" in the base layer filename input.
+-- (6-2-3) dovi plotter will now skip the first two frames to avoid incorrect MDL reading for some MA titles.
+-- (6-8) Added a new workflow that can make 6 SDR screenshots from two sources(SDR/HDR10/P5-DV). With frame difference adjustments support. It will upscale to 2160p by default but can be disabled by adding "DONTUPSCALE" in the input filename. This workflow is very slow and requires Vulkan gpu support. It exports YUV TIFF that can only be opened in MPC. I have to improve this, if anyone knows how to export a lossless png screenshot that retains the original colors and brightness via CLI, please let me know. IM also not satisfied with libplacebo tone mapping, have to test more settings. Any help is welcome.
+
+1.7.1
+
+--Merged all the old mp4 workflows in (7-2-1), this workflow can now mux up to three audios/subs with proper language and forced flag. It can also fix audio delay automatically.
+--(1-1) XML injector will now overwrite any L2 trims because the default resolve trims have a too strong effect on bright content. (there's an option to keep L2 as is)
+--Added a new workflow that can overwrite any L2 trims. (2-1-4)
+--bugfix: (2-1), didn't work with RPU input
+--bugfix: (7-1-2) BD with DTS-HD audio didn't work.
+
+1.7.0
+
+-- Bugfix (4-1-1) ddp encoding and muxing didn't work with LPCM audio BD
+-- Bugfix (4-1-1) latest beta version Introduced a typo that made ts muxing to fail.
+-- Bugfix (2-1-3) workflow selection was in the wrong order.
+-- improved HLG BL detection in (1-1)
+-- the scripts won't ask anymore to encode DDP audio if the input has no lossless audio
+-- improved subtitles handling for when the script is set to MUX=YES
+-- simplified the muxing settings behavior (mkv or ts, mux or not) Default is:
+ container=TS and MUX=YES
+-- added ability to detect and extract forced subs when the script is set to MUX=YES and container=TS. (for plex)
+-- added ddp encoding and thd core generation for the batch tsmuxer mode.(5)
+-- added support for PGS in batch ts muxer mode (5)
+-- added audio delay detection for when the script is set to MUX=YES
+-- added support for aac audio in TS muxing 
+-- added L2 trims info to the dovi plotter
+1.6.9
+– Big change: All the workflows that convert audio are now merged together. By default, the script will always mux to TS. You can disable or set it to mux to MKV. If you input an MKV with THD, the script will add a silent core automatically if set to TS muxing (or popup). For mkv muxing, there's an option to mux only 1 lossless audio or all the audio tracks from the input.
+If the input is HEVC , audio conversion and muxing are disabled.
+-- Added an option to edit L6 and min/max pq for Mode.I p8 hybrid maker (1). If selected, the process is automated. It will get the static metadata from BL and adjust min/max_pq and L6 accordingly. (default=n)
+-- bugfix: (1-2) with XML metadata input didnt work (this workflow doesnt exist anymore anyway)
+-- bugfix: Bluray disc with TrueHD + EX AC3 core(EG Westworld) didnt not work in (7-2-2 and 7-1-2)
+1.6.8
+-- Bugfix: typo in batch TSmuxer mode(5) made the script to fails after 7 files
+-- Bugfix: Quick rpu info(2-3) for input without L5 didn't work properly
+-- Bugfix: DDP workflows failed to mux to TS in the latest version.
+-- Bugfix: TS muxing for ts/m2ts input didn't mux the subtitles.
+1.6.7
+-- Input with special characters support as well as some filename conflicts should be greatly improved. Hopefully, this will also fix some issues for those who use the script on a Windows C:\ drive
+-- Added batch workflow mkv/ts/m2ts to mp4 for old mp4muxer mode. (7-2-8)
+-- Mode.I Mode.F and Mode.P will now display the original DV input active area,L2 trims, max/min pq, and profile before running the job
+-- Mode.I if the script detects cropped resolution, it will automatically set L5 to 0
+-- Mode.H if the script detects cropped resolution, it will automatically crop the rpu
+-- Added more information in the quick rpu check workflow (2-3)
+-- Bugfix 7.1 encoding wasn't selected for tracks without language tag(or non-english)
+-- Bugfix, truehd input without language tag(or non-english) failed in some workflows.
+-- updated dovi_tool
+1.6.6
+-- Added an option to exclude lossless audio from muxing(TS) for the workflows that convert to DD+ (YES or NO default: keep_lossless=YES) (excluding mp4 mode)
+-- Added a warning for when someone tries to input a non-DV bluray disc in mode.p (4)
+-- Added a warning for when someone tries to input an m2ts file instead of the playlist file in mode.p (4)
+-- HDR10plus to DoVi batch workflow can now process version 0 metadata
+-- Bugfix, batch DV plotter stopped working after 2 files.
+-- updated tsmuxer
+1.6.5
+-- EC3 Audio conversion workflow now auto-select the best audio in that order: Language -> TrueHD 7.1 -> DTS 7.1 -> TrueHD 5.1 -> DTS 5.1 and track id 1 -> 2 -> 3 -> 4 -> 5 -> 6
+-- TrueHD to TrueHD+ac3 now auto-select the right ID based on language and audio track order.
+-- Mp4 workflows now use mkvextract(mkv) or tsmuxer(ts/m2ts), no more slow EAC3To.exe. The audio track selection should be improved.
+-- Added xml support for Dovi plotter (6-2-3)
+-- Added a code to exclude the Commentary tracks from audio selection (only works if the input has the track title set to "commentary")
+-- Bugfix: Mode.4 didn't work with special characters input
+-- Bugfix: (7-1) mp4box didn't work if the input was  not 23.976fps
+
+1.6.4
+-- Bugfix: (1-1)  XML + raw HEVC inputs didn't work correctly since I added 8.4 DV support.
+-- Bugfix: (6-2-2) madvr Measurement files input didn't work
+-- Bugfix: Drop HDR10plus option didn't work if BL input was raw HEVC
+-- eac3to.exe is very slow to demux when the source has many subtitle tracks but can demux all the tracks of any container without knowing the IDs which you cannot do with ffmpeg/mkvextract/tsmuxer. It was complicated to do(for me) but as I get better, I found a way to map the track IDs and I'm now using mkvextract to demux mkv and tsmuxer for ts/m2ts files (excluding the mp4 workflow). It may break non-English settings, I just need to find the proper language tag.
+– Added a couple of warnings for when the user tries to input the wrong files in the wrong workflow.
+1.6.3
+-- Added HLG DV Profile 8.4 generation for resolve XML metadata. (MODE.I (1-1 only) and only works if BL is HLG)
+-- Added the capability to change the color range (full or limited) (2-1-5)
+– Improvement in audio selection( EC3 workflows)
+-- Bugfix: (2-3) quick info summary renamed the input if there were special characters or space in the path
+-- Bugfix: 7.1 audio input was sometimes not detected and was encoded to 5.1
+-- Bugfix: MODE.I didn't work if input files had the same filename.
+
+1.6.2
+-- added an option to drop hdr10plus when injecting DV.
+-- added an option to disable subtitles extraction
+-- bugfix, DDP workflows(except BDMV) with english 5.1 and 2.0 DTSHD audio didnt pick the 5.1 track. (EG: Tropic.Thunder.2008.remux.FGT)(4-2)
+-- bugfix, Editing L5 for the BDMV to P8 workflows didnt work since the latest update. (4-1)
+-- added a mp4box batch muxer (up to 13 video/audio/subs) (7-1-8)
+-- added batch capabilities for 7.1 EC3 encoding (up to 13 files) and merged ffmpeg/EAE EC3 encoding together (remember 7.1 encodings can be disabled)
+-- code cleanup for all the batch modes
+
+1.6.1
+- Main mp4 maker mode now only use mp4box and can do both "fake p5 dvh1" and "p8 hev1" (7-1). (I kept the old mp4muxer modes for older TVs 7-2)
+- main mp4 mode (7-1) will now ask for apple compatibility. (y or n default=n) if “y”, output is DVH1 P5. If “n” or skip, output is HEV1 P8
+- mp4muxer modes can now mux appletv webdl with missing fps information and unusual width.
+- 7-1-1 can now mux up to 10 srt subtitles
+- added language tag and forced flag in mp4 workflows (only 7-1)
+- 7-1-4 and 7-1-5 can now also mux P5 input
+- added an option to add an audio delay (in MS) to the AC3/EC3 tracks for the mp4muxer manual workflows (7-1-1 and (7-2-1)(the other workflows already did that)
+- batch tsmuxer mode can now mux any resolution, not just 4K.
+- batch tsmuxer mode can now mux dts and truehd.
+- batch tsmuxer mode can now keep the non-english audio flag when configured (default = english)
+- batch tsmuxer mode can now mux appletv files with missing fps bitstream
+- Added the capability to auto mux to TS or MKV for all the workflows that convert audio (default=YES but it can be turned off and use the old behavior). Only the EC3 workflows mux to MKV.
+- added an option to export the subtitles for the workflow that mux to TS (but forgot to add a setting to turn it off, will do in next version)
+
+
+1.6.0
+- bugfix: 7.1 ec3 encoding workflow didn't work with DTS-X input
+- (7-1) can now be configured to use the newer mp4muxer/mp4box. (default = old version)
+- Added auto dv profile detection for the manual mp4muxer workflows. (7-1-1)
+- AppleTV mp4muxer manual workflow (7-4-1) can now also process P7 input with mapping removal
+- Re-wrote the mp4muxer workflows, (cleaner, simpler and faster)
+- Mp4muxer: Speed improvement for all the P7 workflows
+- Audio encoder workflows that ask for track ID, will now list all the stream ID before the job
+- Dovi_tool updated. there was an issue with some movies with filler data NALUs. here's a list of the ones I found so far. You may want to re-do them if they were muxed/injected with the old dovi_tool.
+
+Evil Dead 2013
+Barb.and.Star.Go.to.Vista.Del.Mar.2021.
+Cat.People.1982
+The.Funhouse.1981
+Boss.Level.2020
+The.355.2022
+Hard.Target.1993
+Drive.2011
+Krampus.2015
+Halloween.1.1978
+Unhinged.2020
+
+
+1.5.9
+- Updated tsmuxer, now the 7.1 EC3 tracks can be muxed properly. (download all the tools or update tsmuxer manually).
+- merged the 5.1 and 7.1 DD+ workflows(mode.I / mode.F / mode.H / mode.P) by default , it will encode 7.1 ec3 if source have 7.1 audio(5.1 encoding can be forced).
+- code clean up
+
+1.5.8
+-Bugfix: forgot to remove the 4gb wav limit for the 7.1 EC3 workflows
+
+1.5.7
+-Added a workflow that can measure audio waveforms (6-2-6)
+-updated mp4box to the latest version that fixes the "not present" issue with EAC3 atmos track (7-4) (this is only for the Apple iOS workflows)
+-7.1 EC3 audio can now be encoded without DEE with Easy Audio Encoder (FREE)(do not remux with tsmuxer though)(6-3-8)
+-7.1 workflows (except Mode.M(6-3)) have been replaced by EAE (do not remux with tsmuxer though)
+-new tools, so download the full pack
+
+1.5.6
+- added dual-track dual-layer input support for the P7 MKV/TS/M2TS to p8 workflows (speed increase too when input is fel) (4-2)
+- added dual-track dual-layer  input support for the dovi plotter workflow (6-2-3)
+- DV plotter workflow can now batch process up to 13 files (rpu or mkv/ts/m2ts) (6-2-3)
+- BDMV to p8: slight speed increase (only when input is fel) (4-1)
+- Audio encoder: DDP 5.1 (ffmpeg) now ask you to set the track id (useful when lossless audio is not id 1. If you skip, default=1) (6-3-4)
+
+1.5.5
+- 7-1-1 didnt work. Thanks @xxyz1
+
+1.5.4
+- HDR10 plotter didnt work since last update
+- added P7 support for Mode.I (1)
+
+1.5.3
+- Profile 7 MKV input to P8 menu order was messed up. Thank’s @realbabilu 
+
+1.5.2
+- updated dovi_tool: refresh scene flag fixer workflows now work. (MODE.F)
+- small fix in mp4muxer EC3 workflow for no lossless audio input. Thanks @duder
+- New workflows that can plot the brightness of HDR10 and DV. (two inputs) (MODE.F)
+
+1.5.1
+- HDR10plus version 0 is now supported. (except the mp4muxer and batch workflows)
+- Added a Dovi and HDR10plus measurer/plotter (you need python and all the modules it will ask you to install: ijson etc..). This one too https://pypi.org/project/colour-science/
+
+1.5.0
+- The P5 to P8 workflows will now automatically fix the AppleTV RPUs that have invalid L6 metadata (MDL>10 000).
+- changed DRC profile to music_light in the DEE 7.1 EC3 workflows. https://forum.doom9.org/showthread.php?p=1972689#post1972689
+
+1.4.9
+- added option to keep a copy of EL when doing P7 to P8 (default = NO)
+- there was another issue with proper audio selection for some bluray input to p8 workflows
+- added a workflow that just makes 5min MKV sample. ( in MODE.M)
+- fixed a couple of errors in the rpu fixer mode (when input was a rpu)
+
+1.4.8
+-  fixed wrong audio selection in the mp4muxer bluray input mode
+
+1.4.7
+- Merged the L5/L6/duplicate/remove fixer and added an option to fix incorrect refresh scene flags. (Mode.F)  (only the removal of duplicated flag works right now. waiting for quietvoid dovitool new version that will add flags)
+- P7 mode is back in the main menu.
+- added non-english support for the P7 input workflows
+- P8 to P5 batch mode didn't work.
+- merged the auto and manual L5 workflows. More questions to answer but remember you can always skip by pressing "enter".
+- code clean-up
+
+1.4.6
+- added a batch edit L5 mode
+- added appletv compatible mp4muxer mode/workflows with SRT and LPCM 7.1 audio support
+- you must download the full pack with tools if you want the appleTV workflows to work.
+- added non-English audio support for the mp4muxer modes. (limited language support, ask me for more or edit the bat file)
+- MKV/TS/M2TS to mp4muxer workflows now accept P8 input as well as P7 like before (workflow 4-5)
+- TEMP_folder can now be edited
+- added DD+ 7.1 @1536kbps workflow for the MODE.I (only works if you have  DEE)
+- HDR10plus and madvr DV generation are now in cmv2.9 instead of 4.x (no point making 4.x without L8)
+- you can set "echo on" in the first line of the script to expose the command lines. (in case of need to debug)
+1.4.5
+- forgot to add the improvements of 1.4.4 in the AUTO-L5 workflows. sorry
+
+1.4.4
+- P5 to P8 synchronization changes/improvements:
+
+remove frames: The script will now remove frames after frame 0 in order to keep refresh scene=1 for frame 0
+duplicate frames: The script will now duplicate frame 1 instead of frame 0 to avoid having multiple refresh_scene in a row
+*** I suspect this is the reason why some RPU didn't work on the Zidoo/Dune player.
+
+1.4.3
+-bugfix: mp4muxer EC3 mode didn't work since I added the ability to choose the audio bitrate (typo)
+-bugfix: the EC3 encoding workflows didn't pick the right track for some BD with DTSHD commentary track. (EG. out of sight BD)
+-Mode xml/rpu and mode p5 to p8 merged together. This mode can now do pretty much anything (that I can think of):
+input HDR10-BL and RPU or XML + all edit
+input HDR10-BL and any P5 file + all edit
+input HDR10-BL and any P8 file + all edit
+input P5-BL and any P5 file + all edit
+
+1.4.2
+- updated tsmuxer.
+- merged xml and rpu injector workflows together
+- merged p5 and p7 input modes together
+- renamed and changed the modes order a bit
+
+1.4.1
+- p5 to p8 workflows will now export scene/shot cut to a text file for double-checking synchronization.
+- p5 to p8 workflows won't keep a copy of the converted rpu anymore by default. If you want the rpu like before, edit the bat file and set keep_rpu=YES
+- added a "script has completed" popup box
+
+1.4.0
+- updated dovi_tool
+- added an rpu info summary for all the workflows that extract/convert/read the rpu
+- added audio conversion workflows for the L5 edit mode (MODE.F ---> Workflow.6)
+- added bitrate parser (works on my end but not sure if this will work everywhere)  (MODE.M → MODE.2 → Workflow.3)
+- added madvr measurement analyzer that can make a brightness graphic. (MODE.M → MODE.2 → Workflow.2)
+
+1.3.9
+- bugfix: fixed the tsmuxer track id mismatch when demuxing TS/M2TS source
+
+1.3.8
+- bugfix: fixed HDR10 and HDR10plus TS input (untouched m2ts from BD still doesnt work, will fix later) thanks @dwalme
+
+1.3.7
+- added the ability to choose audio bitrate in the mp4muxer EC3 workflows
+- bugfix DEE TrueHD encoding without a core didn't work
+- bugfix DEE output files were missing the extension when input had space or special characters.
+- code cleanup
+
+1.3.6
+- added: MODE.F==>Workflow.9= QUICKLY Export the 1st 5 min scene cuts to a text file for synchronization verification (fast).    V 1.3.5 that went online for a few hours had this mode but it wasn't working properly because ffmpeg was messing up the frames at splitting. This is why this version is 1.3.6, MODE.F==>Workflow.9 now uses tsmuxer and the frame remains accurate after splitting so it can be used to quickly check sync without having to demux the whole movie.
+- added: new audio conversion workflows that use the Dolby Encoding Engine (dee.exe not included in the tools pack). If you have DEE, my script can now encode DD+ 7.1 audio @ 1536kbps with a core compatible with bluray players. DD+ without core is limited to 1024kbps. DEE can also encode lossless audio to TrueHD.
+- added: the ability to choose the bitrate for the ffmpeg DD+ 5.1 encoding workflow. up to 256-1536kbps
+- Reader/extractor rpu workflows are now in the MODE.F
+- Renamed the old "READER mode.r" to "MIXED".
+
+
+1.3.4
+- added a mode that can export the scene cut to a text file for sync verification. Thank's @rkjnsn  (MODE.F==>Workflow.8)
+- L5 fixer workflow can now fix BDMV and dual track TS/M2TS input and is now in the new Fixer/Editor/Verificator mode in the main menu: (MODE.F==> Workflow.6)
+- DV and HDR10plus remover workflows didn't work. error in the menu selection
+- added option to edit L5 when going from BD to P8(not for the mp4 mode though) because a lot of BD has incorrect or missing metadata: 
+https://docs.google.com/spreadsheets/d/1646bseZpS13lZx3QQqiobWaWDqwAiT6Iq2R4sCl7gtc/edit?usp=sharing I recommend always checking the source L5 before converting anything.
+
+
+1.3.3
+- "MODE.R ⇒ MODE.1 ⇒ Workflow.2 = Quick Read the rpu of any video"  will now tell you if the ST-DL profile 7 MKV  is FEL or MEL. The process only takes a few seconds…
+- "MODE.R ⇒ MODE.1 ⇒ Workflow.2 = Quick Read the rpu of any video" can now read dual-track dual-layer M2TS from BD and will tell you if the disc is FEL or MEL. The process only takes a few seconds… Dual-track Dual-layer TS input will work as well in the next release.
+
+1.3.2
+- added HDR10(madVR) and HDR10plus to dovi MP4 workflows
+- Merged HDR10(madVR) and HDR10plus to DoVi maker in 1 mode. Selection is automatic
+- Added MPV P5/HDR10/HLG player. press S to export lossless screenshots.  (MODE.R= ---> MODE.9= MPV DV-P5/HDR10 ) PNG will be in Dolby-Vision-Tools\tools\MPV
+- the frame to read in  "Workflow.1= Read and extract RPU metadata of any video" can be skipped
+- Dovi_tool updated to the latest version
+
+1.3.1
+- bugfix: L5 fixer (rpu editor mode) didn't work if the input was MKV. TYPO
+- improvement: HDR10 and HDR10plus to DoVi modes(except batch)  now correctly set L9 metadata according to the Mastering Display Primaries Color input instead of defaulting to P3.
+
+1.3.0
+- bugfix: 1.2.8 updates broke input with a special character in the filename.
+- mp4muxer single track workflow 1 can now do pretty much anything:
+
+if video input is raw hevc/h265, it can mux up to two audio tracks (1 lossless and 1 lossy or 2 lossy. both can be skipped) and up to two subtitles tracks(both can be skipped)
+if video input is MKV/TS/M2TS, DV profile selection is automatic. AC3 audio is encoded or an existing lossy track is used if present in the source. 2 English srt tracks are muxed too( 1 full and 1 forced if present).
+MKV Profile 7 to Profile 8 : SRT subtitles are now automated. Full and forced
+
+Mp4muxer single track mode:
+1) Workflow.1= ANY VIDEO (p5,p7,p8) + ANY AUDIO + SRT subtitle(external)
+2) Workflow.2= Bluray Disc to Profile 8 + AC3 + SRT subtitles(external)
+3) Workflow.3= Bluray Disc to Profile 8 + EC3 + SRT subtitles(external)
+4) Workflow.4= MKV Profile 7 to Profile 8 + AC3 + SRT subtitles
+5) Workflow.5= MKV Profile 7 to Profile 8 + EC3 + SRT subtitles
+
+1.2.9
+- added a new mp4muxer workflow that can convert bluray disc to profile 8 with AC3 instead of EC3 (some devices don't like EC3)
+- added a new mp4muxer workflow that can convert P7 MKV to profile 8 with AC3 instead of EC3 (some devices don't like EC3)
+- Mode.M4 ---> Mode.1 ---> Workflow.1 can now accept MKV/TS/M2TS input. It will convert lossless audio to AC3 or use the existing AC3/ EC3 track if present. It can also mux 2 subtitles (full and forced if present)
+- Mode.M4 ---> Mode.1 ---> Workflow.1 can now mux a video without any audio input.
+
+1.2.8
+-added a mp4_muxer workflow that can mux 2 lossy audio tracks and 1 subtitle. I may add lossless audio in the future.
+
+1.2.7
+- no more cropping function in the P5 to P8 with manual L5 workflows. if you want to crop, use the Auto_L5 workflows
+- if you skip any question (except input files), it will now default to false  or   n   or    will repeat the question
+- added AAC/DTS/DTSHD/TrueHD support for the mp4muxer modes
+- simplified the mp4muxer modes regarding the subtitles. You can just skip  if you don't want subs
+- moved the "quick rpu read mode" into: MODE.R -->  MODE.1 ---> Workflow.2
+- added a new workflow that can Demux, Fix invalid L6 metadata (some itunes web-dl), and Inject. MODE.R -->  MODE.7 ---> Workflow.7
+- downgraded ffmpeg, I think there is an issue with DD+ encoding on the latest nightly. Some files ended up with only 5.0 channels.
+
+1.2.6
+- Since apparently, it is common for studios (or random release groups) to incorrectly set L5 (MA WEB-DLs and some bluray), I automated a new workflow that can Demux, Edit L5, and Inject the new rpu. (mode.r / mode.editor).
+- Added a workflow that can merge existing AC3 and THD track from an MKV file instead of creating an empty core. (mode.r / audio)
+- p5 to p8 duplicate with auto-l5 didn't work
+
+1.2.5
+-  hdr10plus to Dovi bach mode (manual l5) didn't work
+-  added a workflow(mode.r / mode rpu editor) that can check the rpu metadata in just a few seconds for any files. useful to quickly check if the video has proper RPU (L5, L6, etc..)
+
+1.2.4
+- updated dovi_tool and ffmpeg
+- removed yusesope scripts: P7 ST-DL files are now created by the dovi_tool. Faster!
+- BD to P8 now mux and convert the rpu at the same time. Faster!
+- bugfix mode.p7 mode.2 Workflow.1  didn't work
+
+1.2.3
+- wrong default output folder in 1.2.2, my bad.
+- updated mkvmerge and hdr10plus_tool.
+
+1.2.2
+- removed the auto-muxing function (tsmuxer and mkvtoolnix) in the p5 to p8 batch mode because appletv files have fps headers problems (mkvtoolnix/tsmuxer sees the injected file as 25fps). Remember to set a proper frame rate in mkvtoolnix/tsmuxer before muxing appleTV files.
+- Bugfix: typo in MODE.R / rpu editor / duplicator
+
+1.2.1
+- bugfix: fixed the pre-allocation issue with DGdemux for the Bluray folders input modes..
+
+1.2.0
+- bugfix: Bluray MPLS  to  P8-SL  &  P7-ST workflows were broken  since 1.1.8
+
+1.1.9
+- bugfix: the last version introduced a typo in the Mode.R / WF.1 read RPU.
+
+1.1.8
+- Figured out why special characters in filename without space didn't work. Now any input path/filename should work. (except for the batch modes, I'm busy right now, will fix it later)
+- hdr10plus to dv didn't work with TS/M2ts input
+
+1.1.7
+-batch muxer modes: will now mux to TS or MKV(or no muxing) according to the script local parameters (noGUI.popup= YES or NO). Default= no muxing. This allowed me to remove over 3000 lines of code.
+-the scripts didn't work if you renamed the tools folder with spaces or special characters(or if you placed the tools folder in a path with spaces). Now it should work (except for the mp4muxer modes which I don't really care about, I may never add support for that there, just dont rename it) -added a new workflow that can batch convert up to 13 P5 videos to P8 and mux to ts or mkv if selected(when both videos are in sync). I use this for tv shows episodes p5 to p8 web-dl.
+-some code clean up and re-wording
+-updated dovi_tool to the latest version.
+
+1.1.6
+Bugfix: rpu injector (mode 1 workflow 1) didn't work with hevc/h265 raw file input.
+
+1.1.5
+Bugfix: tool didn't work when the input files were in a different drive than the output folder.
+
+1.1.4
+now, there's no more need to treat the REMOVE frames workflow as inclusive, the script will automatically substract 1 from the user input.
