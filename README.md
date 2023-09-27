@@ -5,6 +5,8 @@ Users-friendly scripts to work with HDR / Dolby Vision files and more...
 
 DONATE: https://www.paypal.com/donate/?hosted_button_id=6ML5KUZG9XGB6
 
+The bat file determine the version: MKV, MP4 or TS. If you rename the bat file, the default muxing mode is MKV
+
 Most of the tools needed: https://mega.nz/file/QLFT0QRY#x-pcsQJ9mE58PzFOveaF2ZLWYpTKRPeIRQUED_V-kwY
 
 Put this DLL file somewhere reachable by avisynth+ (only needed if you want to use the dovi baker)
