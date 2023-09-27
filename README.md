@@ -105,6 +105,8 @@ MODE.M (8) =
 - can make 5min samples
 - can encode bake fel to HDR10/P8
 - can encode DV to SDR using 100nits trim pass
+- 
+:---------------------------------------------------------------------------------------------------------------------
 
   L5 active area and cropping:
   
