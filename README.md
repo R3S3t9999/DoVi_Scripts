@@ -96,6 +96,7 @@ MODE.S (7) =
 - can export HDR heatmap and gamut visualization 
 
 :---------------------------------------------------------------------------------------------------------------------
+
 MODE.M (8) =
 - Can remove hdr10plus/DV,
 - can convert audio,
