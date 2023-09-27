@@ -1,5 +1,5 @@
 # DoVi_Scripts
-![Screenshot](introduction.gif)
+[<img src="https://i.ibb.co/ZGs6XMT/introduction.gif">](https://github.com/R3S3t9999/DoVi_Scripts/releases)
 
 [<img src="https://i.ibb.co/QCq3trg/Paypal-donate.png">]( https://www.paypal.com/donate/?hosted_button_id=6ML5KUZG9XGB6)
 
@@ -32,7 +32,7 @@ The bat filename (MKV , MP4 or TS) determines the muxing behavior. If you rename
 
 if you dont edit your path, your script folder must look like this:
 
-![Screenshot](folder.look.jpg)
+[<img src="https://i.ibb.co/xJFzDvj/folder-look.jpg">](https://github.com/R3S3t9999/DoVi_Scripts/releases)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
