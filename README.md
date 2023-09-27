@@ -3,9 +3,8 @@
 
 Users-friendly scripts to work with HDR / Dolby Vision files and more...
 
-DONATE: https://www.paypal.com/donate/?hosted_button_id=6ML5KUZG9XGB6
+[<img src="https://i.ibb.co/QCq3trg/Paypal-donate.png">]( https://www.paypal.com/donate/?hosted_button_id=6ML5KUZG9XGB6)
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Most of the tools needed: https://mega.nz/file/QLFT0QRY#x-pcsQJ9mE58PzFOveaF2ZLWYpTKRPeIRQUED_V-kwY
 
