@@ -45,7 +45,7 @@ MODE.I (1) =
 - One  base layer input and one P5/P8/P7/HDR10plus input (MKV/MP4/HEVC/TS/M2TS/RPU/XML/JSON).
 - Can resync, edit L5/L6/source max-min_pq, can convert the profile to p8. Make hybrid
 - Add "P5BL" in the filename for P5 to P5 injection.
-- 
+
 --------------------------------------------------------------------------------------------------------------------------
 
 MODE.F (2) =
@@ -79,8 +79,11 @@ MODE.7 (4) = Can convert any Profile 7 source(BD or rip) to single-layer Profile
 ------------------------------------------------------------------------------------------------------------------------
 
 MODE.B (5) = Can batch mux any DV source.
+
 MKV/MP4 to TS
+
 TS/MP4 to MKV
+
 MKV/TS to MP4
 
 -----------------------------------------------------------------------------------------------------------------------
@@ -105,7 +108,7 @@ MODE.M (8) =
 - can make 5min samples
 - can encode bake fel to HDR10/P8
 - can encode DV to SDR using 100nits trim pass
-- 
+
 ---------------------------------------------------------------------------------------------------------------------
 
   L5 active area and cropping:
