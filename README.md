@@ -28,7 +28,7 @@ config file(L5 - MD)example for 3-1: https://drive.google.com/file/d/1cxGCIvP0qn
 
 Settings file example: https://drive.google.com/file/d/1u8Q_drQp2CdWpqZwHfdLuvHkPoVLcOf-/view?usp=drive_link
 
-The bat filename (MKV , MP4 or TS) determines the version: MKV, MP4 or TS. If you rename the bat file, the default muxing mode is MKV
+The bat filename (MKV , MP4 or TS) determines the muxing behavior. If you rename the bat file, the default muxing mode is MKV
 
 if you dont edit your path, your script folder must look like this:
 
