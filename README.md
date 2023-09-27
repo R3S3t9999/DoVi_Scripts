@@ -65,7 +65,7 @@ MODE.F (2) =
 
 MODE.H (3) =
 - Can convert any HDR10plus or HDR10 source to shot-by-shot or frame-by-frame DoVi.
-- Dolby cm_analyze or hdr10plus to dv or madvr to dv
+- Official Dolby cm_analyze.exe or hdr10plus to dv or madvr to dv
 - can input external shot list
 - can tune L1 analysis
 - can leave or remove L2 trims
@@ -107,7 +107,7 @@ MODE.M (8) =
 - can inject HDR10plus,
 - can make 5min samples
 - can encode bake fel to HDR10/P8
-- can encode DV to SDR using 100nits trim pass
+- can encode DV to SDR using 100nits trim pass (Official Dolby cm_offline.exe)
 
 ---------------------------------------------------------------------------------------------------------------------
 
