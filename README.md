@@ -1,9 +1,10 @@
 # DoVi_Scripts
-[<img src="https://i.ibb.co/ZGs6XMT/introduction.gif">](https://github.com/R3S3t9999/DoVi_Scripts/releases)
 
 [<img src="https://i.ibb.co/QCq3trg/Paypal-donate.png">]( https://www.paypal.com/donate/?hosted_button_id=6ML5KUZG9XGB6)
 
 Users-friendly drag & drop scripts to process HDR / Dolby Vision files and can do a lot more...
+
+[<img src="https://i.ibb.co/ZGs6XMT/introduction.gif">](https://github.com/R3S3t9999/DoVi_Scripts/releases)
 
 Most of the tools needed: https://mega.nz/file/QLFT0QRY#x-pcsQJ9mE58PzFOveaF2ZLWYpTKRPeIRQUED_V-kwY
 
