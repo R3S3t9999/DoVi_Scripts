@@ -14,7 +14,7 @@ Put this DLL file somewhere reachable by avisynth+ (only needed if you want to u
 
 https://github.com/erazortt/DoViBaker/files/10810040/libdovi-3.1.1-x86_64-pc-windows-msvc.zip
 
-install:
+YOU MUST INSTALL:
 
 https://www.python.org/downloads/release/python-390/ (3.8 should work too)
 
@@ -25,7 +25,7 @@ https://www.videohelp.com/software/LAV-Filters
 https://www.videohelp.com/software/madVR
 
 
-external settings/files example:
+EXTERNAL SETTINGS AND CONFIG FILE EXAMPLES
 
 config file(L5 - MD)example for 3-1: https://drive.google.com/file/d/1cxGCIvP0qnhTzwIb_Up-BsQXrHGMwuM6/view?usp=drive_link 
 
