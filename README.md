@@ -163,4 +163,17 @@ MODE.B (5) = Can batch mux any DV source.
   
   L5 offsets= Left:0 Right:0 Top:0 Bottom:0
   
-  -------------------------------------------
+  ---------------------------------------------------------------------------------------------------------------------
+
+   ##  Interesting links:
+
+   - WEB vs BD comparisons: https://docs.google.com/spreadsheets/d/1jBIGF8XTVi9VmDBZ8a5hEyongYMCDlUiLHU9n1f_S74/edit#gid=0
+
+   - More comparisons: https://docs.google.com/spreadsheets/d/1jBIGF8XTVi9VmDBZ8a5hEyongYMCDlUiLHU9n1f_S74/edit#gid=917134052
+
+   - HDR movies brightness plot: https://drive.google.com/drive/u/1/folders/154fBNllwOHL4Lckc7wDV8QKFJwFxnDt-
+
+   - DV device playback supports: https://docs.google.com/spreadsheets/d/1jBIGF8XTVi9VmDBZ8a5hEyongYMCDlUiLHU9n1f_S74/edit#gid=427220017
+
+   
+  
