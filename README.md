@@ -13,7 +13,7 @@
 -------------------------------------------------------------------------------------------------------------------------
 
 ## MOST OF THE TOOLS NEEDED (MINUS EAE AND DOLBY TOOLS):
-https://mega.nz/file/1akhyRrJ#W-nlCQKg6eiwPZRSNa_taZsaNzvQ08n1yLtid8nu0K0
+https://mega.nz/file/xCNWzRyI#aLuc8Z-IgHy81uQgszJiUAPkXG0QjiCiws8m-2DTpkc
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -34,6 +34,8 @@ Put this DLL file somewhere reachable by avisynth+ such as C:\Windows\System32 (
 Dolby tools can be found here: 
 
 - https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools
+
+EAE folder is only needed for 7.1 EC3 encoding. see instruction: https://github.com/R3S3t9999/DoVi_Scripts/blob/main/TOOLS%20%26%20INSTALLATION
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -174,5 +176,19 @@ MODE.B (5) = Can batch mux any DV source.
 
    - DV device playback supports: https://docs.google.com/spreadsheets/d/1jBIGF8XTVi9VmDBZ8a5hEyongYMCDlUiLHU9n1f_S74/edit#gid=427220017
 
+  ---------------------------------------------------------------------------------------------------------------------
+  
+## Input filename keywords:
+
+P5BL : force p5 to p5 injection in 1-1
+KEEPTRIMS : keep trims in XML injection for 1-1
+DONTUPSCALE : Keep original resolution in 7-2
+KEEPAUDIO : Keep all the audio when the script local settings are set to keep only main audio
+DONTMUX : Disable muxing when the script is set to mux
+IGNORERPU : Ignore internal rpu for shot list in 3-1
+REMOVECMV4 : Force CMV4.0 removal in 1-1
+KEEPPRORES : Keep prores when the script is set to delete it
+FORCESDR : Force SDR tonemapping in 7-1 7-2
+CROPPED : Add black borders for cropped video in 3-1 ( for prores encoding since cm_analyze is very slow with cropped input)... ***Haven't tested this function yet****
    
   
