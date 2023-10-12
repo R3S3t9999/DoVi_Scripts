@@ -164,23 +164,22 @@ MODE.B (5) = Can batch mux any DV source.
   
   L5 offsets= Left:0 Right:0 Top:0 Bottom:0
 
-   
-    ---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
   
 ## Input filename keywords:
 
--P5BL : force p5 to p5 injection in 1-1
--KEEPTRIMS : keep trims in XML injection for 1-1
--DONTUPSCALE : Keep original resolution in 7-2
--KEEPAUDIO : Keep all the audio when the script local settings are set to keep only main audio
--DONTMUX : Disable muxing when the script is set to mux
--IGNORERPU : Ignore internal rpu for shot list in 3-1
--REMOVECMV4 : Force CMV4.0 removal in 1-1
--KEEPPRORES : Keep prores when the script is set to delete it
--FORCESDR : Force SDR tonemapping in 7-1 7-2
--CROPPED : Add black borders for cropped video in 3-1 ( for prores encoding since cm_analyze is very slow with cropped input)... ***Haven't tested this function yet****
-   
-    ---------------------------------------------------------------------------------------------------------------------
+- P5BL : force p5 to p5 injection in 1-1
+- KEEPTRIMS : keep trims in XML injection for 1-1
+- DONTUPSCALE : Keep original resolution in 7-2
+- KEEPAUDIO : Keep all the audio when the script local settings are set to keep only main audio
+- DONTMUX : Disable muxing when the script is set to mux
+- IGNORERPU : Ignore internal rpu for shot list in 3-1
+- REMOVECMV4 : Force CMV4.0 removal in 1-1
+- KEEPPRORES : Keep prores when the script is set to delete it
+- FORCESDR : Force SDR tonemapping in 7-1 7-2
+- CROPPED : Add black borders for cropped video in 3-1 ( for prores encoding since cm_analyze is very slow with cropped input)... ***Haven't tested this function yet****
+
+---------------------------------------------------------------------------------------------------------------------
 
    ##  Interesting links:
 
