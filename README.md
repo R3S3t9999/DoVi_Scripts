@@ -29,10 +29,6 @@ https://mega.nz/file/wf81RDpL#yGE_Qlo2k2dpwbuluTEsUScEKcJO6pL0mpT9zNQDTZc
 
 - https://www.videohelp.com/software/madVR
 
-Put this DLL file somewhere reachable by avisynth+ such as C:\Windows\System32 (only needed if you want to use the dovi baker)
-
-- https://github.com/erazortt/DoViBaker/files/10810040/libdovi-3.1.1-x86_64-pc-windows-msvc.zip
-
 Dolby tools can be found here: 
 
 - https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools
