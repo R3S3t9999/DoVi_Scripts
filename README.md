@@ -39,9 +39,9 @@ EAE folder is only needed for 7.1 EC3 encoding. see instruction: https://github.
 
 ## EXTERNAL SETTINGS AND CONFIG FILE EXAMPLES (optional)
 
-- config file(L5 - MD)example for 3-1 and 2-1-2 batch modes: https://drive.google.com/file/d/1cxGCIvP0qnhTzwIb_Up-BsQXrHGMwuM6/view?usp=drive_link 
+- config file(L5 - MD)example for 3-1 and 2-1-2 batch modes: https://mega.nz/file/5CcAkACQ#w7M5DQFpJ_WKvD148uEtgM2OG6HcXtk9YQYozcd8VpU
 
-- Settings file example: https://drive.google.com/file/d/1u8Q_drQp2CdWpqZwHfdLuvHkPoVLcOf-/view?usp=drive_link
+- Settings file example: https://mega.nz/file/9WdggIYa#k6UbU4RXEJUc14KrdeVklsj1Zg9nNMxivgL0P53WgjY
 
 -------------------------------------------------------------------------------------------------------------------------
 
