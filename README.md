@@ -175,7 +175,6 @@ MODE.B (5) = Can batch mux any DV source.
 - REMOVECMV4 : Force CMV4.0 removal in 1-1
 - KEEPPRORES : Keep prores when the script is set to delete it
 - FORCESDR : Force SDR tonemapping in 7-1 7-2
-- CROPPED : Add black borders for cropped video in 3-1 ( for prores encoding since cm_analyze is very slow with cropped input)... ***Haven't tested this function yet****
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -188,5 +187,11 @@ MODE.B (5) = Can batch mux any DV source.
    - HDR movies brightness plot: https://drive.google.com/drive/u/1/folders/154fBNllwOHL4Lckc7wDV8QKFJwFxnDt-
 
    - DV device playback supports: https://docs.google.com/spreadsheets/d/1jBIGF8XTVi9VmDBZ8a5hEyongYMCDlUiLHU9n1f_S74/edit#gid=427220017
+
+   - How to make P8 hybrid properly : https://www.youtube.com/watch?v=hVWZpat34oc
+
+   - How to batch generate DV: https://www.youtube.com/watch?v=jBqbG5XM54g
+
+   - Convert HDR to SDR with Dolby Vision: https://www.youtube.com/watch?v=lM56zLpKDQ8
 
   ---------------------------------------------------------------------------------------------------------------------
