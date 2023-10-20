@@ -15,7 +15,7 @@
 ## MOST OF THE TOOLS NEEDED (MINUS EAE AND DOLBY TOOLS):
 https://mega.nz/file/wf81RDpL#yGE_Qlo2k2dpwbuluTEsUScEKcJO6pL0mpT9zNQDTZc
 
-* EAE folder is only needed for 7.1 DDP encoding.
+EAE folder is only needed for 7.1 DDP encoding.
 
 -------------------------------------------------------------------------------------------------------------------------
 
