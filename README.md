@@ -13,7 +13,8 @@
 -------------------------------------------------------------------------------------------------------------------------
 
 ## MOST OF THE TOOLS NEEDED (MINUS EAE AND DOLBY TOOLS):
-https://mega.nz/file/wf81RDpL#yGE_Qlo2k2dpwbuluTEsUScEKcJO6pL0mpT9zNQDTZc
+
+https://mega.nz/file/EG9VCLIS#Qvy_xcrZRVdEiaR-oi_pCkLEcEZg-GNzBlIR0goaBiY
 
 EAE folder is only needed for 7.1 DDP encoding.
 
@@ -41,7 +42,7 @@ EAE folder is only needed for 7.1 EC3 encoding. see instruction: https://github.
 
 - config file(L5 - MD)example for 3-1 and 2-1-2 batch modes: https://mega.nz/file/5CcAkACQ#w7M5DQFpJ_WKvD148uEtgM2OG6HcXtk9YQYozcd8VpU
 
-- Settings file example: https://mega.nz/file/9WdggIYa#k6UbU4RXEJUc14KrdeVklsj1Zg9nNMxivgL0P53WgjY
+- Settings file example: https://mega.nz/file/hfUg2DoT#m7PSo4UXdQZ-LIsSgWzFpM8HzNvmEGHgugah0biRiyM
 
 -------------------------------------------------------------------------------------------------------------------------
 
