@@ -92,8 +92,11 @@ To ensure optimal performance, make sure that your path and script folder (conta
 - Shot list source is selected in this order:
 
 1- any external file with the same filename as the input (rpu, json, text)
+
 2- internal RPU (in case of original rpu that has no shot, add ''IGNORERPU'' in the input filename.)
+
 3- internal hdr10plus
+
 4- if no dynamic metadata is found, it uses madvr to generate a shot list which means that if your source doesn't have any dynamic metadata, you can use the generated RPU from your previous 6-2 measurement.
 
 ------------------------------------------------------------------------------------------------------------------------
