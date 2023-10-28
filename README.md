@@ -14,9 +14,7 @@
 
 ## MOST OF THE TOOLS NEEDED (MINUS EAE AND DOLBY TOOLS):
 
-https://mega.nz/file/EG9VCLIS#Qvy_xcrZRVdEiaR-oi_pCkLEcEZg-GNzBlIR0goaBiY
-
-EAE folder is only needed for 7.1 DDP encoding.
+https://mega.nz/file/NXFlBQoZ#dv3nNrbq_O-kMfWnfUQiJvV6wBKx-DspLMA0hX-78-o
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -34,7 +32,7 @@ Dolby tools can be found here:
 
 - https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools
 
-EAE folder is only needed for 7.1 EC3 encoding. see instruction: https://github.com/R3S3t9999/DoVi_Scripts/blob/main/TOOLS%20%26%20INSTALLATION
+EAE folder is only needed for 7.1 EC3 encoding. see links: https://github.com/R3S3t9999/DoVi_Scripts/blob/main/TOOLS%20%26%20INSTALLATION
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -91,6 +89,12 @@ To ensure optimal performance, make sure that your path and script folder (conta
 - L1 analysis can be tuned (line 95)
 - it defaults to removing generated L2 trims, although you have the flexibility to adjust this behavior by modifying lines 83-87.
 - can batch generate with external files for L5/ MD, and shot list
+- Shot list source is selected in this order:
+
+1- any external file with the same filename as the input (rpu, json, text)
+2- internal RPU (in case of original rpu that has no shot, add ''IGNORERPU'' in the input filename.)
+3- internal hdr10plus
+4- if no dynamic metadata is found, it uses madvr to generate a shot list which means that if your source doesn't have any dynamic metadata, you can use the generated RPU from your previous 6-2 measurement.
 
 ------------------------------------------------------------------------------------------------------------------------
 
