@@ -122,8 +122,6 @@ set x265_path=http://msystem.waw.pl/x265/
 
 set avs2pipe_path=https://mega.nz/file/kKcDjBIR#HzbYcB-jA2PV8VgZyOpRE9CCuJ2jhI5MHFlmznz_zlU
 
-set DEE_path=D:\other\DEE\dee.exe
-
 plot bitrate dorian: https://mega.nz/file/xC8kiJxI#eOc2264iokClwBhnpZmZQl6E223qI1-gioo6kpOyvq8
 
 avsresize: https://mega.nz/file/8CFmSaRa#tywQf_G1cKWBrtVuRDsmsul7WAkm8MNPKuWkwISFpe4
@@ -134,3 +132,4 @@ x265 SDR settings file: https://mega.nz/file/FTMQ0LgB#gb3Bi1v5PBFMqV6Iv2OWMtbNxV
 
 DoVi_tool no floor: https://mega.nz/file/gDkwkaZL#buLYSG_kYxCEM12czKkZ-Sfbe8XowdI8e2XDXMBvDZY
 
+set DEE_path=D:\other\DEE\dee.exe
