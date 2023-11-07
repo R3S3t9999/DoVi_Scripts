@@ -14,7 +14,7 @@
 
 ## MOST OF THE TOOLS NEEDED (MINUS EAE AND DOLBY TOOLS):
 
-https://mega.nz/file/NXFlBQoZ#dv3nNrbq_O-kMfWnfUQiJvV6wBKx-DspLMA0hX-78-o
+https://mega.nz/file/RLFjARgI#RNCvVwWXX6rpkB_y43u74XH7UgQyHKDiKsXBKfRFYBw
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -40,7 +40,9 @@ EAE folder is only needed for 7.1 EC3 encoding. see links: https://github.com/R3
 
 - config file(L5 - MD)example for 3-1 and 2-1-2 batch modes: https://mega.nz/file/5CcAkACQ#w7M5DQFpJ_WKvD148uEtgM2OG6HcXtk9YQYozcd8VpU
 
-- Settings file example: https://mega.nz/file/hfUg2DoT#m7PSo4UXdQZ-LIsSgWzFpM8HzNvmEGHgugah0biRiyM
+- Settings file example: https://mega.nz/file/kKlmUDoZ#SSva1pDG3QeJscuDxnkKcHZzoadfUkEaMsPsXxX2WV8
+
+- x265 HDR encode settings file: https://mega.nz/file/ZDFRBbCK#fYo7dr4yuztRlib4fUhuvvEWkp3OJqiPqSBxQZ4Ilm4
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -83,11 +85,12 @@ To ensure optimal performance, make sure that your path and script folder (conta
 -------------------------------------------------------------------------------------------------------------------------
 
 ## MODE.H (3) =
-- Can convert any HDR10plus or HDR10 source to shot-by-shot or frame-by-frame DoVi.  CMV4.0 metadata, no fake static crap
+- Can convert any HDR10plus/HDR10/HLG source to shot-by-shot or frame-by-frame DoVi.  CMV4.0 metadata, no fake static crap
 - Official Dolby cm_analyze.exe (best) or hdr10plus to dv or madvr to dv
 - can input external shot list
 - L1 analysis can be tuned (line 95)
 - it defaults to removing generated L2 trims, although you have the flexibility to adjust this behavior by modifying lines 83-87.
+- Support DV P5 input
 - can batch generate with external files for L5/ MD, and shot list
 - Shot list source is selected in this order:
 
@@ -135,7 +138,8 @@ MODE.B (5) = Can batch mux any DV source.
 - can find bd playlist
 - can inject HDR10plus
 - can make 5 min samples. timestamp configurable at line: 109
-- can encode bake fel to HDR10/P8 with dovibaker+ffmpeg/x265
+- can encode bake fel to HDR10/P8 with dovibaker+x265
+- can encode any HDR10/HLG/FELP7/P5 source to HDR or SDR (x265 or prores)
 - can encode DV to SDR using official Level-2 100nits trim pass (Official Dolby cm_offline.exe)
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -174,7 +178,7 @@ MODE.B (5) = Can batch mux any DV source.
   
 ## Input filename keywords:
 
-- P5BL : force p5 to p5 injection in 1-1
+- P5BL : force p5 to p5 injection in 1-1 when input is raw hevc
 - KEEPTRIMS : keep trims in XML injection for 1-1
 - DONTUPSCALE : Keep original resolution in 7-2
 - KEEPAUDIO : Keep all the audio when the script local settings are set to keep only main audio
