@@ -14,7 +14,7 @@
 
 ## MOST OF THE TOOLS NEEDED (MINUS EAE AND DOLBY TOOLS):
 
-https://mega.nz/file/RLFjARgI#RNCvVwWXX6rpkB_y43u74XH7UgQyHKDiKsXBKfRFYBw
+https://mega.nz/file/kSEXWATT#MvJcgFZUQMCXCIG3Tf8KZW4G4YlZzOU4F7XIe9BRsio
 
 -------------------------------------------------------------------------------------------------------------------------
 
