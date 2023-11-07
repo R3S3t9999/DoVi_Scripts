@@ -4,7 +4,7 @@
 
 :: You can change the output path: Example: " set output_path=D:\Video.Folder\ "
 
-:: You can change the output path Example: "set temp_folder=F:\TEMP.folder" but know that each workflow will delete whatever path you set when the job is done. So dont put a temp like C:\ or C:\Users\username\Documents
+:: You can change the temp path Example: "set temp_folder=F:\TEMP.folder" but know that each workflow will delete whatever the path you set when the job is done. So dont put a temp like C:\ or C:\Users\username\Documents, always change to a non-existing folder.
 
 :: You can use an external settings file, see the example below
 
@@ -33,17 +33,6 @@ https://www.python.org/downloads/release/python-390/ (3.8 should work too)
 https://avs-plus.net/ (64bit)
 https://www.videohelp.com/software/LAV-Filters
 https://www.videohelp.com/software/madVR
-
-Put this DLL file somewhere reachable by avisynth+ (only needed if you want to use the dovi baker)
-
-https://github.com/erazortt/DoViBaker/files/10810040/libdovi-3.1.1-x86_64-pc-windows-msvc.zip
-
-external settings/files example:
-
-config file(L5 - MD)example for 3-1: https://drive.google.com/file/d/1cxGCIvP0qnhTzwIb_Up-BsQXrHGMwuM6/view?usp=drive_link 
-
-Settings file example: https://drive.google.com/file/d/1u8Q_drQp2CdWpqZwHfdLuvHkPoVLcOf-/view?usp=drive_link
-
 
 set dovi_tool_path=https://github.com/quietvoid/dovi_tool
 
@@ -135,96 +124,19 @@ set cm_offline_path=https://customer.dolby.com/content-creation-and-delivery/dol
 
 set subtitle_tonemap=https://github.com/quietvoid/subtitle_tonemap/releases only needed for 2-9
 
+set x265_path=http://msystem.waw.pl/x265/
+
+set avs2pipe_path=https://mega.nz/file/kKcDjBIR#HzbYcB-jA2PV8VgZyOpRE9CCuJ2jhI5MHFlmznz_zlU
+
 set DEE_path=D:\other\DEE\dee.exe
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+plot bitrate dorian: https://mega.nz/file/xC8kiJxI#eOc2264iokClwBhnpZmZQl6E223qI1-gioo6kpOyvq8
 
-MODE.I (1) =
-- Can do all the extracting parsing and injecting/ editing of two input sources.
-- One  base layer input and one P5/P8/P7/HDR10plus input (MKV/MP4/HEVC/TS/M2TS/RPU/XML/JSON).
-- Can resync, edit L5/L6/source max-min_pq, can convert the profile to p8. Make hybrid
-- Add "P5BL" in the filename for P5 to P5 injection.
-:------------------------------------------------------------------------------------------------------------------------------------------------------
+avsresize: https://mega.nz/file/8CFmSaRa#tywQf_G1cKWBrtVuRDsmsul7WAkm8MNPKuWkwISFpe4
 
-MODE.F (2) =
-- Can get info(fel or mel, profile, l1/l2/l5) from any DV source as well as extract and fix any rpu that has editing errors.
-- It can also verify the RPU synchronization and brightness.
-- This mode does not convert the RPU profile.
-- Can fix fps bitstream, color range…
-- can find frame difference between two source
-- Can validate metadata with Dolby Metafier
-- Can convert RPU to XML
-- Can overwrite L2 trims
-- can remove cmv4.0
-- Can tonemap pgs subtitles to different brightness
-- Input must be a DV P5/P7/P8 file. (MKV/MP4/HEVC/TS/M2TS/RPU/).
+x265 HDR settings file: https://mega.nz/file/ZDFRBbCK#fYo7dr4yuztRlib4fUhuvvEWkp3OJqiPqSBxQZ4Ilm4
 
-:------------------------------------------------------------------------------------------------------------------------------------------------------
+x265 SDR settings file: https://mega.nz/file/FTMQ0LgB#gb3Bi1v5PBFMqV6Iv2OWMtbNxVyVmvUliJF-QWsDAtQ
 
-MODE.H (3) =
-- Can convert any HDR10plus or HDR10 source to shot-by-shot or frame-by-frame DoVi.
-- Dolby cm_analyze or hdr10plus to dv or madvr to dv
-- can input external shot list
-- can tune L1 analysis
-- can leave or remove L2 trims
-- can make CMV4.0 metadata, no fake static stuff...
-- can batch and use external files for L5 and MD, and shot list
-
-:------------------------------------------------------------------------------------------------------------------------------------------------------
-
-MODE.7 (4) = Can convert any Profile 7 source(BD or rip) to single-layer Profile 8 or Profile 7 single-track dual-layers.
-
-:------------------------------------------------------------------------------------------------------------------------------------------------------
-
-MODE.B (5) = Can batch mux any DV source.
-MKV/MP4 to TS
-TS/MP4 to MKV
-MKV/TS to MP4
-
-:------------------------------------------------------------------------------------------------------------------------------------------------------
-
-MODE.P (6) =
-- can measure dv hdr10 hdr10plus video bitrate audio waveforms,
-
-:------------------------------------------------------------------------------------------------------------------------------------------------------
-
-MODE.S (7) =
-- can export screenshots
-
-:------------------------------------------------------------------------------------------------------------------------------------------------------
-MODE.M (8) =
-- Can remove hdr10plus/DV,
-- can convert audio,
-- can find bd playlist,
-- can inject HDR10plus,
-- can play P5/HDR10 movies in SDR/HDR10
-- can make 5min samples
-- can encode bake fel to HDR10
-- can export screenshots
-- can encode DV to SDR using 100nits trim pass
-
-
-   L5 active area:
-  a-) if the base layer is 16:9 (no black bars, fullscreen): set L5 to 0
-  b-) if the base layer is 16:9 but has black bars: measure the BL letterbox and adjust L5 accordingly.                                                                                                                                     	 
-  c-) if the base layer is cropped set L5 to 0
- 
-  Example 1:
-  -------------------------------------------------------------------
-  input= 3840x2160p with active area of 2.40 (16:9 with black bars)
-  L5 offsets= Left:0 Right:0 Top:280 Bottom:280
-  -------------------------------------------------------------------
- 
-  Example 2:
-  -------------------------------------------------------------------
-  input= 3840x2160p with active area of 1.78 (16:9 no black bars)
-  L5 offsets= Left:0 Right:0 Top:0 Bottom:0
-  -------------------------------------------------------------------
- 
-  Example 3:
-  -------------------------------------------
-  input= 3840x1600p (cropped)
-  L5 offsets= Left:0 Right:0 Top:0 Bottom:0
-  -------------------------------------------
-
+DoVi_tool no floor: https://mega.nz/file/gDkwkaZL#buLYSG_kYxCEM12czKkZ-Sfbe8XowdI8e2XDXMBvDZY
 
