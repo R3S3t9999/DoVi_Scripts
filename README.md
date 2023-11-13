@@ -40,7 +40,7 @@ EAE folder is only needed for 7.1 EC3 encoding. see links: https://github.com/R3
 
 - config file(L5 - MD)example for 3-1 and 2-1-2 batch modes: https://mega.nz/file/5CcAkACQ#w7M5DQFpJ_WKvD148uEtgM2OG6HcXtk9YQYozcd8VpU
 
-- Settings file example: https://mega.nz/file/kKlmUDoZ#SSva1pDG3QeJscuDxnkKcHZzoadfUkEaMsPsXxX2WV8
+- Settings file example: https://mega.nz/file/NWERGKQZ#JmUZZ2ZCpU9JJ3gKwvXicdTO3rPEX1rRwALWvHJ7kyM
 
 - x265 HDR encode settings file: https://mega.nz/file/ZDFRBbCK#fYo7dr4yuztRlib4fUhuvvEWkp3OJqiPqSBxQZ4Ilm4
 
