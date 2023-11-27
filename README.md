@@ -16,6 +16,8 @@
 
 https://mega.nz/file/ZWdkCRxS#Jy4O71aqtOz4rHt_qbdas6RY-Cna8nImuglNeJg1qgk
 
+batch files: https://github.com/R3S3t9999/DoVi_Scripts/releases
+
 -------------------------------------------------------------------------------------------------------------------------
 
 ## YOU MUST INSTALL:
