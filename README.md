@@ -40,9 +40,9 @@ EAE folder is only needed for 7.1 EC3 encoding. see links: https://github.com/R3
 
 ## EXTERNAL SETTINGS AND CONFIG FILE EXAMPLES (optional)
 
-- config file(L5 - MD)example for 3-1 and 2-1-2 batch modes: https://mega.nz/file/5CcAkACQ#w7M5DQFpJ_WKvD148uEtgM2OG6HcXtk9YQYozcd8VpU
+- config file(L5 - MD)example for 3-1: https://mega.nz/file/5CcAkACQ#w7M5DQFpJ_WKvD148uEtgM2OG6HcXtk9YQYozcd8VpU
 
-- Settings file example: https://mega.nz/file/NWERGKQZ#JmUZZ2ZCpU9JJ3gKwvXicdTO3rPEX1rRwALWvHJ7kyM
+- Settings file example: https://mega.nz/file/MCU3UARI#2mt1JMy8jEKYtc0pRByGlJ_1LZm0KQWQnnj3B9XbEWs
 
 - x265 HDR encode settings file: https://mega.nz/file/ZDFRBbCK#fYo7dr4yuztRlib4fUhuvvEWkp3OJqiPqSBxQZ4Ilm4
 
@@ -66,7 +66,7 @@ To ensure optimal performance, make sure that your path and script folder (conta
 - Can do all the extracting parsing, injecting, and editing of two input sources. (P8 hybrid maker)
 - One static HDR base layer input and one dynamic HDR file input (MKV/MP4/HEVC/TS/M2TS/RPU/XML/JSON HDR10+).
 - Can easily resynchronize RPUs, edit parameters like L5/L6, convert the profile to P8. (P8 hybrid maker)
-- Add "P5BL" in the filename for raw HEVC P5 to P5 injection otherwise, the output will always be Profile 8
+- Add "P5BL" in the filename for raw HEVC P5 to P5 injection otherwise, the output will always be Profile 8, The keywords ''JUSTINJECT'' also keeps the profile intact.
 - For XML injection, it defaults to removing L2 trims, although you have the flexibility to adjust this behavior by modifying lines 83-87.
 - Can remove cmv4.0 default = NO (line 91)
 
@@ -74,6 +74,7 @@ To ensure optimal performance, make sure that your path and script folder (conta
 
 ## MODE.F (2) =
 - Can get info(fel or mel, profile, l1/l2/l5) from any DV source as well as extract and edit any DV source.
+- Can use external json files
 - Can verify the RPU synchronization
 - Can fix fps bitstream, color range
 - Can find frame difference between two sources
@@ -92,7 +93,7 @@ To ensure optimal performance, make sure that your path and script folder (conta
 - can input external shot list
 - L1 analysis can be tuned (line 95)
 - it defaults to removing generated L2 trims, although you have the flexibility to adjust this behavior by modifying lines 83-87.
-- Support DV P5 input
+- Support DV-P5 / HDR10 / HLG input
 - can batch generate with external files for L5/ MD, and shot list
 - Shot list source is selected in this order:
 
@@ -116,7 +117,7 @@ MODE.B (5) = Can batch mux any DV source.
 
 - MKV/MP4 to TS
 
-- *TS/MP4 to MKV (the mkv version is intended for batch remuxing DV TS files which need to be demuxed first)
+- *TS to MKV (the mkv version is intended for batch remuxing DV TS files which need to be demuxed first)
 
 - MKV/TS to MP4
 
@@ -128,9 +129,10 @@ MODE.B (5) = Can batch mux any DV source.
 ----------------------------------------------------------------------------------------------------------------------
 
 ## MODE.S (7) =
-- can export screenshots (FEL P5 HDR10 SDR ETC) fully automated or manual modes
+- can export 16bits RGB screenshots (FEL P5 HDR10 HLG SDR) fully automated frame accurate or manual modes
 - can play FEL + BL or Profile 5 DV in HDR10 or SDR with madVR+MPC (if your pc can handle it)
-- can export HDR heatmap and gamut visualization 
+- can export HDR heatmap and gamut visualization (FEL P5 HDR10 HLG SDR)
+- can tonemap to SDR or PQ
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -143,6 +145,7 @@ MODE.B (5) = Can batch mux any DV source.
 - can encode bake fel to HDR10/P8 with dovibaker+x265
 - can encode any HDR10/HLG/FELP7/P5 source to HDR or SDR (x265 or prores)
 - can encode DV to SDR using official Level-2 100nits trim pass (Official Dolby cm_offline.exe)
+- can quickly find a video framecount (useful when creating a shotlist in 3-1)
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -178,17 +181,20 @@ MODE.B (5) = Can batch mux any DV source.
 
 ---------------------------------------------------------------------------------------------------------------------
   
-## Input filename keywords:
+## Input filename keywords that override the script's main settings:
 
 - P5BL : force p5 to p5 injection in 1-1 when input is raw hevc
-- KEEPTRIMS : keep trims in XML injection for 1-1
 - DONTUPSCALE : Keep original resolution in 7-2
-- KEEPAUDIO : Keep all the audio when the script local settings are set to keep only main audio
-- DONTMUX : Disable muxing when the script is set to mux
+- KEEPAUDIO : Keep all the audio 
+- DONTMUX : Disable muxing 
 - IGNORERPU : Ignore internal rpu for shot list in 3-1
 - REMOVECMV4 : Force CMV4.0 removal in 1-1
-- KEEPPRORES : Keep prores when the script is set to delete it
+- KEEPPRORES : Keep prores file
 - FORCESDR : Force SDR tonemapping in 7-1 7-2
+- KEEPTRIMS : keep trims in XML injection for 1-1 and 3-1
+- KEEP1000 : keep 1000nits trims in XML injection for 1-1 and 3-1
+- KEEP600 : keep 600nits trims in XML injection for 1-1 and 3-1
+- JUSTINJECT : Inject without changing the DV profile in 1-1
 
 ---------------------------------------------------------------------------------------------------------------------
 
