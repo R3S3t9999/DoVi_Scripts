@@ -14,7 +14,7 @@
 
 ## MOST OF THE TOOLS NEEDED (MINUS EAE AND DOLBY TOOLS):
 
-https://mega.nz/file/ZWdkCRxS#Jy4O71aqtOz4rHt_qbdas6RY-Cna8nImuglNeJg1qgk
+https://mega.nz/file/5H9UhKqL#hCXvFT5sJqf8rLNcYoWyEcACSmm8G7UWdIRrRfT4gY4
 
 batch files: https://github.com/R3S3t9999/DoVi_Scripts/releases
 
@@ -42,7 +42,7 @@ EAE folder is only needed for 7.1 EC3 encoding. see links: https://github.com/R3
 
 - config file(L5 - MD)example for 3-1: https://mega.nz/file/5CcAkACQ#w7M5DQFpJ_WKvD148uEtgM2OG6HcXtk9YQYozcd8VpU
 
-- Settings file example: https://mega.nz/file/MCU3UARI#2mt1JMy8jEKYtc0pRByGlJ_1LZm0KQWQnnj3B9XbEWs
+- Settings file example: https://mega.nz/file/gCFyBTRJ#xDxa7edsjjrgpUzJXnwzjdNxZdgpjofdFq5oc2R81e8
 
 - x265 HDR encode settings file: https://mega.nz/file/ZDFRBbCK#fYo7dr4yuztRlib4fUhuvvEWkp3OJqiPqSBxQZ4Ilm4
 
