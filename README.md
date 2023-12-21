@@ -14,7 +14,7 @@
 
 ## MOST OF THE TOOLS NEEDED (MINUS EAE AND DOLBY TOOLS):
 
-https://mega.nz/file/5H9UhKqL#hCXvFT5sJqf8rLNcYoWyEcACSmm8G7UWdIRrRfT4gY4
+https://mega.nz/file/dWcVRLyC#A1O1Zw9YAmT3Y0IOKG6xYGueU0NAhGcJBKPZWXG0PcA
 
 batch files: https://github.com/R3S3t9999/DoVi_Scripts/releases
 
