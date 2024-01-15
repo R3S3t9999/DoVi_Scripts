@@ -1,6 +1,13 @@
 # DoVi_Scripts
 
-[<img src="https://i.ibb.co/QCq3trg/Paypal-donate.png">]( https://www.paypal.com/donate/?hosted_button_id=6ML5KUZG9XGB6)
+[<img src="https://i.ibb.co/yg83CcS/LATEST-VERSION.png">]( https://github.com/R3S3t9999/DoVi_Scripts/releases) [<img src="https://i.ibb.co/fDxT8zb/TOOLS-PACK.png">]( https://mega.nz/file/dWcVRLyC#A1O1Zw9YAmT3Y0IOKG6xYGueU0NAhGcJBKPZWXG0PcA)
+
+The tools pack doesnt include the Dolby Vision tools and Easy Audio encoder folder, see where to download them below...
+
+-------------------------------------------------------------------------------------------------------------------------
+
+[<img src="https://i.ibb.co/pr8FpLW/68747470733a2f2f692e6962622e636f2f514371337472672f50617970616c2d646f6e6174652e706e67.png">]( https://www.paypal.com/donate/?hosted_button_id=6ML5KUZG9XGB6)          [<img src="https://i.ibb.co/822cC77/627b94685a3e2ac874a7573c.png">]( https://www.youtube.com/channel/UCEYM1g3nkBNCpgPuyd4JL_g) 
+
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -9,14 +16,6 @@
 -------------------------------------------------------------------------------------------------------------------------
 
 [<img src="https://i.ibb.co/ZGs6XMT/introduction.gif">](https://github.com/R3S3t9999/DoVi_Scripts/releases)
-
--------------------------------------------------------------------------------------------------------------------------
-
-## MOST OF THE TOOLS NEEDED (MINUS EAE AND DOLBY TOOLS):
-
-https://mega.nz/file/dWcVRLyC#A1O1Zw9YAmT3Y0IOKG6xYGueU0NAhGcJBKPZWXG0PcA
-
-batch files: https://github.com/R3S3t9999/DoVi_Scripts/releases
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -74,7 +73,7 @@ To ensure optimal performance, make sure that your path and script folder (conta
 
 ## MODE.F (2) =
 - Can get info(fel or mel, profile, l1/l2/l5) from any DV source as well as extract and edit any DV source.
-- Can use external json files
+- Can use external json files and batch
 - Can verify the RPU synchronization
 - Can fix fps bitstream, color range
 - Can find frame difference between two sources
@@ -82,7 +81,7 @@ To ensure optimal performance, make sure that your path and script folder (conta
 - Can convert RPU to XML
 - Can overwrite L2 trims
 - can batch remove cmv4.0
-- Can tonemap pgs subtitles to different brightness
+- can copy any metadata level to another rpu
 - This mode does not convert the RPU profile
 
 -------------------------------------------------------------------------------------------------------------------------
@@ -117,8 +116,6 @@ MODE.B (5) = Can batch mux any DV source.
 
 - MKV/MP4 to TS
 
-- *TS to MKV (the mkv version is intended for batch remuxing DV TS files which need to be demuxed first)
-
 - MKV/TS to MP4
 
 -----------------------------------------------------------------------------------------------------------------------
@@ -140,12 +137,12 @@ MODE.B (5) = Can batch mux any DV source.
 - Can remove hdr10plus or DV
 - can convert audio (DDP 7.1 / Add silent or encoded core to TrueHD)
 - can find bd playlist
-- can inject HDR10plus
 - can make 5 min samples. timestamp configurable at line: 109
 - can encode bake fel to HDR10/P8 with dovibaker+x265
 - can encode any HDR10/HLG/FELP7/P5 source to HDR or SDR (x265 or prores)
 - can encode DV to SDR using official Level-2 100nits trim pass (Official Dolby cm_offline.exe)
 - can quickly find a video framecount (useful when creating a shotlist in 3-1)
+- Can tonemap pgs subtitles to different brightness
 
 ---------------------------------------------------------------------------------------------------------------------
 
