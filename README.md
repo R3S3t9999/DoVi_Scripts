@@ -1,6 +1,6 @@
 # DoVi_Scripts
 
-[<img src="https://i.ibb.co/yg83CcS/LATEST-VERSION.png">]( https://github.com/R3S3t9999/DoVi_Scripts/releases) [<img src="https://i.ibb.co/fDxT8zb/TOOLS-PACK.png">]( https://mega.nz/file/dWcVRLyC#A1O1Zw9YAmT3Y0IOKG6xYGueU0NAhGcJBKPZWXG0PcA)
+[<img src="https://i.ibb.co/yg83CcS/LATEST-VERSION.png">]( https://github.com/R3S3t9999/DoVi_Scripts/releases) [<img src="https://i.ibb.co/fDxT8zb/TOOLS-PACK.png">]( https://mega.nz/file/kW1kTYCA#Zb5zN4iUKC-d-H5gz88IyCDDOYKW7_ymz10Qs9_OyPU)
 
 The tools pack doesnt include the [Dolby Vision tools](https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools-v541) and [Easy Audio Encoder](https://github.com/R3S3t9999/DoVi_Scripts/blob/main/TOOLS%20%26%20INSTALLATION) folder.
 See other requirements below...
@@ -42,7 +42,7 @@ EAE folder is only needed for 7.1 EC3 encoding. see links: https://github.com/R3
 
 - config file(L5 - MD)example for 3-1: https://mega.nz/file/5CcAkACQ#w7M5DQFpJ_WKvD148uEtgM2OG6HcXtk9YQYozcd8VpU
 
-- Settings file example: https://mega.nz/file/gCFyBTRJ#xDxa7edsjjrgpUzJXnwzjdNxZdgpjofdFq5oc2R81e8
+- Settings file example: https://mega.nz/file/xbs3zKCI#nmFhPgFnPcqCuVN_Wi6JywhHdWL8CYAt7zcpzx2eSWw
 
 - x265 HDR encode settings file: https://mega.nz/file/ZDFRBbCK#fYo7dr4yuztRlib4fUhuvvEWkp3OJqiPqSBxQZ4Ilm4
 
