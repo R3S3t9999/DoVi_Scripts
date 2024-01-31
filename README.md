@@ -139,8 +139,8 @@ MODE.B (5) = Can batch mux any DV source.
 - can convert audio (DDP 7.1 / Add silent or encoded core to TrueHD)
 - can find bd playlist
 - can make 5 min samples. timestamp configurable at line: 109
-- can encode bake fel to HDR10/P8 with dovibaker+x265
-- can encode any HDR10/HLG/FELP7/P5 source to HDR or SDR (x265 or prores)
+- can encode bake fel to HDR10/P8 with dovibaker+x265 or NVenc
+- can encode any HDR10/HLG/FELP7/P5 source to HDR or SDR (x265 or NVenc or  prores)
 - can encode DV to SDR using official Level-2 100nits trim pass (Official Dolby cm_offline.exe)
 - can quickly find a video framecount (useful when creating a shotlist in 3-1)
 - Can tonemap pgs subtitles to different brightness
