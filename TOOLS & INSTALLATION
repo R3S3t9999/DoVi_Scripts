@@ -17,3 +17,28 @@ set cm_offline_path=https://customer.dolby.com/content-creation-and-delivery/dol
 set DEE_path=https://professional.dolby.com/product/media-processing-and-delivery/dee--dolby-encoding-engine/
 
 once you downloaded everything, your DoVi_scripts folder must look like this: https://github.com/R3S3t9999/DoVi_Scripts/releases
+
+
+## YOU MUST INSTALL:
+
+- https://www.python.org/downloads/release/python-390/ (3.8 should work too)
+
+- https://avs-plus.net/ (64bit)
+
+- https://www.videohelp.com/software/LAV-Filters
+
+- https://www.videohelp.com/software/madVR
+
+Dolby tools can be found here: 
+
+- https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools
+
+EAE folder is only needed for 7.1 EC3 encoding. see links: https://github.com/R3S3t9999/DoVi_Scripts/blob/main/TOOLS%20%26%20INSTALLATION
+
+-------------------------------------------------------------------------------------------------------------------------
+
+## EXTERNAL SETTINGS AND CONFIG FILE EXAMPLES (optional)
+
+- config file(L5 - MD)example for 3-1: https://mega.nz/file/5CcAkACQ#w7M5DQFpJ_WKvD148uEtgM2OG6HcXtk9YQYozcd8VpU
+
+- Settings file example: https://drive.google.com/file/d/1jQGuzZQyqhqwOTAFjkWWe-JMl6QDFeon/view?usp=drive_link
