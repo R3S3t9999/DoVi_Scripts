@@ -1,139 +1,19 @@
-:: You have to download and edit the paths(notepad++) of all the tools below (you may not have to download them all).
+Most of the tools are available in the pack that can be downloaded here: https://drive.google.com/file/d/1ogpO8JlrqjSXfjwxmf2qpoJc0LjSTfXz/view?usp=drive_link
 
-:: The default output folder is wherever you place the "DoVi_Scripts" folder.  A Windows drive (C:\) is not recommended
-
-:: You can change the output path: Example: " set output_path=D:\Video.Folder\ "
-
-:: You can change the temp path Example: "set temp_folder=F:\TEMP.folder" but know that each workflow will delete whatever the path you set when the job is done. So dont put a temp like C:\ or C:\Users\username\Documents, always change to a non-existing folder.
-
-:: You can use an external settings file, see the example below
-
-:: Click on the DoVi_Scripts.bat, select a mode, a workflow, drag and drop input, and wait...
-
-:: MANY THANKS TO ALL THE CREATORS OF THE TOOLS/CODES I'M USING IN THESE SCRIPTS.
-
-:: In case of issues, most of the time, just remove special characters or space from the path/filename
-
-:: If drag and drop doesnt work on Windows 11, reset your Windows security to default and reboot.
-
-:: You can use external bat files for the paths and settings. (PATHS.bat / SETTINGS.bat)
-
-:: Sorry for my English...
- 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-install:
-https://www.python.org/downloads/release/python-390/ (3.8 should work too)
-https://avs-plus.net/ (64bit)
-https://www.videohelp.com/software/LAV-Filters
-https://www.videohelp.com/software/madVR
-
-set dovi_tool_path=https://github.com/quietvoid/dovi_tool
-
-set dovi_tool_FIX_path=https://github.com/quietvoid/dovi_tool/releases/tag/1.3.2
-
-set hdr10plus_parser_path=https://github.com/quietvoid/hdr10plus_tool
-
-set tsmuxer_path=https://github.com/justdan96/tsMuxer/releases
-
-set tsmuxer.GUI_path=https://github.com/justdan96/tsMuxer/releases
-
-set ffmpeg_path=https://www.videohelp.com/software/ffmpeg
-
-set ffprobe_path=https://www.videohelp.com/software/ffmpeg
-
-set mkvmerge_path=https://www.videohelp.com/software/MKVToolNix
-
-set mkvtoolnix_path=https://www.videohelp.com/software/MKVToolNix
-
-set mkvextract_path=https://www.videohelp.com/software/MKVToolNix
-
-set madvr_path=https://www.videohelp.com/software/madVR  (you need a madvr folder with madMeasureHDR.exe)
-
-set AC3.64kbps_path= https://drive.google.com/file/d/1aaCp3OHA3_haD3qyExWSnds0dAwOqG3m/view?usp=share_link only needed if you opt for TS files
-
-set thdmerge_path=http://rationalqm.us/board/viewtopic.php?f=16&p=15406#p15406 only needed if you opt for TS files
-
-set mp4muxer_path=https://github.com/bbeny123/mp4muxer/releases (not needed if you dont use the mp4 workflows)
-
-set mp4muxerNEW_path=https://github.com/DolbyLaboratories/dlb_mp4base only needed if you opt for MP4 files
-
-set mp4demuxer_path=https://github.com/DolbyLaboratories/dlb_mp4demux only needed if you opt for MP4 files
-
-set mp4box_path=https://www.videohelp.com/download/gpac-1.1.0-DEV-latest-master-x64.exe only needed if you opt for MP4 files
-
-set mp4box2_path=https://www.videohelp.com/software/MP4Box only needed if you opt for MP4 files
-
-set detectborders_path=dont remember the github where i got it. PM me (not needed if you only use manual L5 edits)
-
-set mediainfo_path=https://mediaarea.net/en/MediaInfo/Download/Windows
-
-set delaycut=https://www.videohelp.com/software/delaycut
-
-set DGDemux_path=https://www.rationalqm.us/dgdemux/dgdemux.html
-
-set eac3to_path=https://www.videohelp.com/software/eac3to
-
-set JQ_path=https://stedolan.github.io/jq/
-
-set MPV_path=https://mpv.io/
-
-set MPC_path=https://www.videohelp.com/software/Media-Player-Classic-Home-Cinema (need to be the portable version)
-
-set plotbitrate_path= https://github.com/zeroepoch/plotbitrate
+Tools you have to download yourself due to copyrights:
 
 set EAE_path=download/install plex server and copy the files from the installation folder in this folder (you can uninstall it once you got the files)(not needed if you dont encode audio to DDP 7.1)
 
-set EAE=https://github.com/pabloromeo/clusterplex/files/9396885/EasyAudioEncoder.zip(not needed if you dont encode audio to DDP 7.1)
+set EAE=https://github.com/pabloromeo/clusterplex/files/9396885/EasyAudioEncoder.zip (not needed if you dont encode audio to DDP 7.1)
 
-set wave=dont remember the github where i got it (PM me) (not needed if you dont plot audio waveforms)
+Dolby vision tools can be downloaded with a free account from the Dolby website.
 
-set PLEX=download/install plex server and get the transcoder from the installation folder (you can uninstall it once you got the files) (not needed if you dont encode audio to DDP 7.1)
+set metafier_path=https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools  
 
-set supfoe=https://forum.makemkv.com/forum/viewtopic.php?t=20964 (not needed if you dont export subs)
+set cm_analyzer_path=https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools 
 
-set imagemagick=https://imagemagick.org/script/download.php#windows (not needed if you dont plot HDR10)
+set cm_offline_path=https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools 
 
-set RPU.to.XML=https://github.com/saindriches/dovi_meta/releases/tag/0.1.0-fix
+set DEE_path=https://professional.dolby.com/product/media-processing-and-delivery/dee--dolby-encoding-engine/
 
-set scenedetect_path= https://github.com/Breakthrough/PySceneDetect/releases/download/v0.6.1-release/PySceneDetect-0.6.1-win64-portable.zip
-
-set gnuplot=https://sourceforge.net/projects/gnuplot/files/gnuplot/
-
-set AvsPmod_path=https://www.videohelp.com/software/AvsP
-
-set DGIndexNV_path=https://www.rationalqm.us/dgdecnv/dgdecnv.html
-
-set ffms2=https://mega.nz/file/pD9wRQqZ#i1mTXxanWgqSodHPOsNBAEiAhuX64WLSx3weICtNqQk
-
-set ffmsindex=https://mega.nz/file/pD9wRQqZ#i1mTXxanWgqSodHPOsNBAEiAhuX64WLSx3weICtNqQk
-
-set heat_map= https://drive.google.com/file/d/1VuGz1pCH2FPJ085IglwZ4FP5Jru532k-/view?usp=sharing
-
-set metafier_path=https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools  only needed if you want to remove trims and do metadata validation
-
-set cm_analyzer_path=https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools  only needed for 3-1 3-2
-
-set cm_offline_path=https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools only needed for 8-7-1
-
-set subtitle_tonemap=https://github.com/quietvoid/subtitle_tonemap/releases only needed for 2-9
-
-set x265_path=http://msystem.waw.pl/x265/
-
-set avs2pipe_path=https://mega.nz/file/kKcDjBIR#HzbYcB-jA2PV8VgZyOpRE9CCuJ2jhI5MHFlmznz_zlU
-
-plot bitrate dorian: https://mega.nz/file/xC8kiJxI#eOc2264iokClwBhnpZmZQl6E223qI1-gioo6kpOyvq8
-
-avsresize: https://mega.nz/file/8CFmSaRa#tywQf_G1cKWBrtVuRDsmsul7WAkm8MNPKuWkwISFpe4
-
-x265 HDR settings file: https://mega.nz/file/ZDFRBbCK#fYo7dr4yuztRlib4fUhuvvEWkp3OJqiPqSBxQZ4Ilm4
-
-x265 SDR settings file: https://mega.nz/file/FTMQ0LgB#gb3Bi1v5PBFMqV6Iv2OWMtbNxVyVmvUliJF-QWsDAtQ
-
-DoVi_tool no floor: https://mega.nz/file/gDkwkaZL#buLYSG_kYxCEM12czKkZ-Sfbe8XowdI8e2XDXMBvDZY
-
-set subtitle.edit=https://www.videohelp.com/software/Subtitle-Edit (portable)
-
-set avs2pipe_path=https://mega.nz/file/kKcDjBIR#HzbYcB-jA2PV8VgZyOpRE9CCuJ2jhI5MHFlmznz_zlU
-
-set DEE_path=D:\other\DEE\dee.exe
+once you downloaded everything, your DoVi_scripts folder must look like this: https://github.com/R3S3t9999/DoVi_Scripts/releases
