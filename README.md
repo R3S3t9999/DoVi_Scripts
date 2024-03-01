@@ -1,6 +1,6 @@
 # DoVi_Scripts
 
-[<img src="https://i.ibb.co/yg83CcS/LATEST-VERSION.png">]( https://github.com/R3S3t9999/DoVi_Scripts/releases) [<img src="https://i.ibb.co/fDxT8zb/TOOLS-PACK.png">]( https://drive.google.com/file/d/1ogpO8JlrqjSXfjwxmf2qpoJc0LjSTfXz/view?usp=drive_link)
+[<img src="https://i.ibb.co/yg83CcS/LATEST-VERSION.png">]( https://github.com/R3S3t9999/DoVi_Scripts/releases) [<img src="https://i.ibb.co/fDxT8zb/TOOLS-PACK.png">](https://drive.google.com/file/d/1dL-WU3lpMI3ggAfL5fgIMDA5qvq7FaOs/view?usp=sharing)
 
 The tools pack doesnt include the [Dolby Vision tools](https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools-v541) and [Easy Audio Encoder](https://github.com/R3S3t9999/DoVi_Scripts/blob/main/TOOLS%20%26%20INSTALLATION) folder.
 See other requirements below...
