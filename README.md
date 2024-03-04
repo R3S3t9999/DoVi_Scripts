@@ -24,13 +24,15 @@ BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/fi
 
 ## YOU MUST INSTALL:
 
-- https://www.python.org/downloads/release/python-390/ (3.8 should work too)
+- [python](https://www.python.org)
 
-- https://avs-plus.net/ (64bit)
+- [avisynthplus 64bit](https://avs-plus.net/)
 
-- https://www.videohelp.com/software/LAV-Filters
+- [lavfilters](https://www.videohelp.com/software/LAV-Filters)
 
-- https://www.videohelp.com/software/madVR
+- [madvr](https://www.videohelp.com/software/madVR)
+
+- [Vapoursynth](https://www.vapoursynth.com/)
 
 Dolby tools can be found here: 
 
@@ -66,6 +68,7 @@ To ensure optimal performance, make sure that your path and script folder (conta
 - Can do all the extracting parsing, injecting, and editing of two input sources. (P8 hybrid maker)
 - One static HDR base layer input and one dynamic HDR file input (MKV/MP4/HEVC/TS/M2TS/RPU/XML/JSON HDR10+).
 - Can easily resynchronize RPUs, edit parameters like L5/L6, convert the profile to P8. (P8 hybrid maker)
+- Can resync HDR10plus
 - Add "P5BL" in the filename for raw HEVC P5 to P5 injection otherwise, the output will always be Profile 8, The keywords ''JUSTINJECT'' also keeps the profile intact.
 - For XML injection, it defaults to removing L2 trims, although you have the flexibility to adjust this behavior by modifying lines 83-87.
 - Can remove cmv4.0 default = NO (line 91)
