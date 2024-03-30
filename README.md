@@ -68,9 +68,8 @@ To ensure optimal performance, make sure that your path and script folder (conta
 - Can do all the extracting parsing, injecting, and editing of two input sources. (P8 hybrid maker)
 - One static HDR base layer input and one dynamic HDR file input (MKV/MP4/HEVC/TS/M2TS/RPU/XML/JSON HDR10+).
 - Can easily resynchronize RPUs, edit parameters like L5/L6, convert the profile to P8. (P8 hybrid maker)
-- Can resync HDR10plus
+- Can resync/inect HDR10plus
 - Add "P5BL" in the filename for raw HEVC P5 to P5 injection otherwise, the output will always be Profile 8, The keywords ''JUSTINJECT'' also keeps the profile intact.
-- For XML injection, it defaults to removing L2 trims, although you have the flexibility to adjust this behavior by modifying lines 83-87.
 - Can remove cmv4.0 default = NO (line 91)
 
 --------------------------------------------------------------------------------------------------------------------------
@@ -95,7 +94,6 @@ To ensure optimal performance, make sure that your path and script folder (conta
 - Official Dolby cm_analyze.exe (best) or hdr10plus to dv or madvr to dv
 - can input external shot list
 - L1 analysis can be tuned (line 95)
-- it defaults to removing generated L2 trims, although you have the flexibility to adjust this behavior by modifying lines 83-87.
 - Support DV-P5 / HDR10 / HLG input
 - can batch generate with external files for L5/ MD, and shot list
 - Shot list source is selected in this order:
