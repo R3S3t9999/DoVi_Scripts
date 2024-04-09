@@ -1,10 +1,12 @@
+INSTALLATION TUTORIAL: https://www.youtube.com/watch?v=6SLtsVDse2w
+
 Tools you have to download yourself due to copyrights:
 
 set EAE_path=download/install plex server and copy the files from the installation folder in this folder (you can uninstall it once you got the files)(not needed if you dont encode audio to DDP 7.1)
 
 set EAE=https://github.com/pabloromeo/clusterplex/files/9396885/EasyAudioEncoder.zip (not needed if you dont encode audio to DDP 7.1)
 
-Dolby vision tools can be downloaded with a free account from the Dolby website.
+Dolby Vision tools can be downloaded with a free account from the Dolby website.
 
 set metafier_path=https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools  
 
