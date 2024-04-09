@@ -2,6 +2,7 @@
 
 [<img src="https://i.ibb.co/yg83CcS/LATEST-VERSION.png">]( https://github.com/R3S3t9999/DoVi_Scripts/releases) [<img src="https://i.ibb.co/fDxT8zb/TOOLS-PACK.png">](https://drive.google.com/file/d/1dL-WU3lpMI3ggAfL5fgIMDA5qvq7FaOs/view?usp=sharing)
 
+INSTALLATION TUTORIAL: https://www.youtube.com/watch?v=6SLtsVDse2w
 The tools pack doesnt include the [Dolby Vision tools](https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools-v541) and [Easy Audio Encoder](https://github.com/R3S3t9999/DoVi_Scripts/blob/main/TOOLS%20%26%20INSTALLATION) folder.
 See other requirements below...
 
@@ -68,7 +69,7 @@ To ensure optimal performance, make sure that your path and script folder (conta
 - Can do all the extracting parsing, injecting, and editing of two input sources. (P8 hybrid maker)
 - One static HDR base layer input and one dynamic HDR file input (MKV/MP4/HEVC/TS/M2TS/RPU/XML/JSON HDR10+).
 - Can easily resynchronize RPUs, edit parameters like L5/L6, convert the profile to P8. (P8 hybrid maker)
-- Can resync/inect HDR10plus
+- Can resync/inJect HDR10plus / DV
 - Add "P5BL" in the filename for raw HEVC P5 to P5 injection otherwise, the output will always be Profile 8, The keywords ''JUSTINJECT'' also keeps the profile intact.
 - Can remove cmv4.0 default = NO (line 91)
 
