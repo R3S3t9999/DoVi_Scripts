@@ -1,6 +1,6 @@
 # DoVi_Scripts
 
-[<img src="https://i.ibb.co/yg83CcS/LATEST-VERSION.png">]( https://github.com/R3S3t9999/DoVi_Scripts/releases) [<img src="https://s10.gifyu.com/images/SfqTm.png">](https://drive.google.com/file/d/1dL-WU3lpMI3ggAfL5fgIMDA5qvq7FaOs/view?usp=sharing)
+[<img src="https://i.ibb.co/yg83CcS/LATEST-VERSION.png">]( https://github.com/R3S3t9999/DoVi_Scripts/releases) [<img src="https://s12.gifyu.com/images/SfqTl.png">](https://drive.google.com/file/d/1dL-WU3lpMI3ggAfL5fgIMDA5qvq7FaOs/view?usp=sharing)
 
 INSTALLATION TUTORIAL: https://www.youtube.com/watch?v=6SLtsVDse2w
 
