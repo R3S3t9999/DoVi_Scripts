@@ -1,6 +1,7 @@
 # DoVi_Scripts
 
 [<img src="https://i.ibb.co/yg83CcS/LATEST-VERSION.png">]( https://github.com/R3S3t9999/DoVi_Scripts/releases) [<img src="https://s12.gifyu.com/images/SfqTl.png">](https://drive.google.com/file/d/1S4dqemaD8snI7QW29InG_XjI6VP0PNhk/view?usp=sharing)
+
 PASSWORD FOR THE TOOLS PACK:  dovi_scripts
 
 INSTALLATION TUTORIAL: https://www.youtube.com/watch?v=6SLtsVDse2w
