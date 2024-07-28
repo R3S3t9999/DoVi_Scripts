@@ -22,7 +22,7 @@ BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/fi
 
 -------------------------------------------------------------------------------------------------------------------------
 
-[<img src="https://i.ibb.co/ZGs6XMT/introduction.gif">](https://github.com/R3S3t9999/DoVi_Scripts/releases)
+[<img src="https://s12.gifyu.com/images/Sts6T.gif">](https://github.com/R3S3t9999/DoVi_Scripts/releases)
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -75,7 +75,6 @@ To ensure optimal performance, make sure that your path and script folder (conta
 - One static HDR base layer input and one dynamic HDR file input (MKV/MP4/HEVC/TS/M2TS/RPU/XML/JSON HDR10+).
 - Can easily resynchronize RPUs, edit parameters like L5/L6, convert the profile to P8. (P8 hybrid maker)
 - Can resync/inJect HDR10plus / DV
-- Add "P5BL" in the filename for raw HEVC P5 to P5 injection otherwise, the output will always be Profile 8, The keywords ''JUSTINJECT'' also keeps the profile intact.
 - Can remove cmv4.0 default = NO (line 91)
 - Can get info(fel or mel, profile, l1/l2/l5) from any DV source as well as extract and edit any DV source.
 - Can use external json files and batch
@@ -84,12 +83,19 @@ To ensure optimal performance, make sure that your path and script folder (conta
 - can batch remove cmv4.0
   
 examples:  
+
 [quick info, edit, extract...](https://s10.gifyu.com/images/S5l93.gif)
+
 [direct quick info, edit, extract...](https://s12.gifyu.com/images/S5l9s.gif)
+
 [inject DV and HDR10plus in one shot (json must be in sync)](https://s12.gifyu.com/images/S5l9H.gif)
+
 [json edit](https://s12.gifyu.com/images/S5l9x.gif)
+
 [batch edit (folder input)](https://s12.gifyu.com/images/S5l9K.gif)
+
 [batch inject (folder)](https://s12.gifyu.com/images/S5l9N.gif)
+
 --------------------------------------------------------------------------------------------------------------------------
 
 ## MODE.F (2) =
@@ -152,6 +158,7 @@ MODE.B (5) = Can batch mux any DV source.
 - can encode bake fel to HDR10/P8 with dovibaker+x265 or NVenc
 - can encode any HDR10/HLG/FELP7/P5 source to HDR or SDR (x265 or NVenc or  prores)
 - can encode DV to SDR using official Level-2 100nits trim pass (Official Dolby cm_offline.exe)
+  
 ---------------------------------------------------------------------------------------------------------------------
 
 ## MODE.M (9) =
