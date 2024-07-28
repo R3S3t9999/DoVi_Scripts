@@ -24,8 +24,7 @@ BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/fi
 
 -------------------------------------------------------------------------------------------------------------------------
 
-![Script gif.](https://s12.gifyu.com/images/Sts6T.gif)
-
+[<img src="https://i.ibb.co/S6Pv7dC/Sts6T.gif">]( https://github.com/R3S3t9999/DoVi_Scripts/releases) 
 
 -------------------------------------------------------------------------------------------------------------------------
 
