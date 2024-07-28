@@ -37,6 +37,8 @@ BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/fi
 - [madvr](https://www.videohelp.com/software/madVR)
 
 - [Vapoursynth](https://www.vapoursynth.com/)
+  
+- Make sure you have the latest [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed
 
 Dolby tools can be found here: 
 
@@ -75,21 +77,28 @@ To ensure optimal performance, make sure that your path and script folder (conta
 - Can resync/inJect HDR10plus / DV
 - Add "P5BL" in the filename for raw HEVC P5 to P5 injection otherwise, the output will always be Profile 8, The keywords ''JUSTINJECT'' also keeps the profile intact.
 - Can remove cmv4.0 default = NO (line 91)
-
+- Can get info(fel or mel, profile, l1/l2/l5) from any DV source as well as extract and edit any DV source.
+- Can use external json files and batch
+- Can validate metadata with Official Dolby Metafier
+- Can convert RPU to XML
+- can batch remove cmv4.0
+  
+examples:  
+[quick info, edit, extract...](https://s10.gifyu.com/images/S5l93.gif)
+[direct quick info, edit, extract...](https://s12.gifyu.com/images/S5l9s.gif)
+[inject DV and HDR10plus in one shot (json must be in sync)](https://s12.gifyu.com/images/S5l9H.gif)
+[json edit](https://s12.gifyu.com/images/S5l9x.gif)
+[batch edit (folder input)](https://s12.gifyu.com/images/S5l9K.gif)
+[batch inject (folder)](https://s12.gifyu.com/images/S5l9N.gif)
 --------------------------------------------------------------------------------------------------------------------------
 
 ## MODE.F (2) =
-- Can get info(fel or mel, profile, l1/l2/l5) from any DV source as well as extract and edit any DV source.
-- Can use external json files and batch
 - Can verify the RPU synchronization
-- Can fix fps bitstream, color range
-- Can find frame difference between two sources
-- Can validate metadata with Official Dolby Metafier
-- Can convert RPU to XML
+- Can remove HDR10plus or DV
 - Can overwrite L2 trims
-- can batch remove cmv4.0
+- Can export EDL timeline DV or HDR10plus for Resolve
 - can copy any metadata level to another rpu
-- This mode does not convert the RPU profile
+- can export L5 config files
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -114,7 +123,6 @@ To ensure optimal performance, make sure that your path and script folder (conta
 
 ## MODE.7 (4) = 
 - Can process any Profile 7 source(BD or Rip) to Single-layer Profile 8 or Profile 7 single-track dual-layers.
-- Can remove cmv4.0 default = NO (line 91)
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -127,7 +135,7 @@ MODE.B (5) = Can batch mux any DV source.
 -----------------------------------------------------------------------------------------------------------------------
 
 ## MODE.P (6) =
-- Can batch plot DoVi Level 1,2,3,5,6,8 and hdr10, hdr10plus, video bitrate
+- Can batch plot DoVi Level 1,2,3,4,5,6,8 and hdr10, hdr10plus, video bitrate
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -140,15 +148,19 @@ MODE.B (5) = Can batch mux any DV source.
 ---------------------------------------------------------------------------------------------------------------------
 
 ## MODE.M (8) =
-- Can remove hdr10plus or DV
 - can convert audio (DDP 7.1 / Add silent or encoded core to TrueHD)
-- can find bd playlist
-- can make 5 min samples. timestamp configurable at line: 109
 - can encode bake fel to HDR10/P8 with dovibaker+x265 or NVenc
 - can encode any HDR10/HLG/FELP7/P5 source to HDR or SDR (x265 or NVenc or  prores)
 - can encode DV to SDR using official Level-2 100nits trim pass (Official Dolby cm_offline.exe)
+---------------------------------------------------------------------------------------------------------------------
+
+## MODE.M (9) =
+- can find bd playlist
+- can make 5 min samples. timestamp configurable at line: 109
 - can quickly find a video framecount (useful when creating a shotlist in 3-1)
 - Can tonemap pgs subtitles to different brightness
+- Can fix fps bitstream, color range
+- Can find frame difference between two sources
 
 ---------------------------------------------------------------------------------------------------------------------
 
