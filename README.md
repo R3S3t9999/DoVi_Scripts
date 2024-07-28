@@ -24,7 +24,8 @@ BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/fi
 
 -------------------------------------------------------------------------------------------------------------------------
 
-[<img src="https://s12.gifyu.com/images/Sts6T.gif">]
+![Script gif.](https://s12.gifyu.com/images/Sts6T.gif)
+
 
 -------------------------------------------------------------------------------------------------------------------------
 
