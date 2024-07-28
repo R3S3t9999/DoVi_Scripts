@@ -24,7 +24,7 @@ BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/fi
 
 -------------------------------------------------------------------------------------------------------------------------
 
-[<img src="https://i.ibb.co/S6Pv7dC/Sts6T.gif">]( https://github.com/R3S3t9999/DoVi_Scripts/releases) 
+[<img src="https://i.ibb.co/S6Pv7dC/Sts6T.gif">](https://github.com/R3S3t9999/DoVi_Scripts/releases)
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -160,7 +160,7 @@ MODE.B (5) = Can batch mux any DV source.
 - can encode bake fel to HDR10/P8 with dovibaker+x265 or NVenc
 - can encode any HDR10/HLG/FELP7/P5 source to HDR or SDR (x265 or NVenc or  prores)
 - can encode DV to SDR using official Level-2 100nits trim pass (Official Dolby cm_offline.exe)
-  
+- can encode P8/P7 and JPEG2000 IMF mxf / Prores files to profile 5 DV (requires DEE.exe)
 ---------------------------------------------------------------------------------------------------------------------
 
 ## MODE.M (9) =
