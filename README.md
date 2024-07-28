@@ -6,6 +6,8 @@ PASSWORD FOR THE TOOLS PACK:  dovi_scripts
 
 INSTALLATION TUTORIAL: https://www.youtube.com/watch?v=6SLtsVDse2w
 
+SUPPORT: https://forum.doom9.org/showthread.php?t=185317
+
 The tools pack doesnt include the [Dolby Vision tools](https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools-v541) and [Easy Audio Encoder](https://github.com/R3S3t9999/DoVi_Scripts/blob/main/TOOLS%20%26%20INSTALLATION) folder.
 See other requirements below...
 
@@ -22,7 +24,7 @@ BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/fi
 
 -------------------------------------------------------------------------------------------------------------------------
 
-[<img src="https://s12.gifyu.com/images/Sts6T.gif">](https://github.com/R3S3t9999/DoVi_Scripts/releases)
+[<img src="https://s12.gifyu.com/images/Sts6T.gif">]
 
 -------------------------------------------------------------------------------------------------------------------------
 
