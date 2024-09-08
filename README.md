@@ -40,7 +40,7 @@ BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/fi
 
 - [Vapoursynth](https://www.vapoursynth.com/)
   
-- Make sure you have the latest [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed
+- Make sure you have the latest [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed and if it complains about missing DLL, install older versions.
 
 Dolby tools can be found here: 
 
