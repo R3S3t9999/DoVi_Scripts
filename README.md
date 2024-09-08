@@ -28,7 +28,7 @@ BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/fi
 
 -------------------------------------------------------------------------------------------------------------------------
 
-## YOU MUST INSTALL:
+## YOU MUST INSTALL (not needed if you only want to edit,inject,demux,plot RPU):
 
 - [python](https://www.python.org)
 
