@@ -13,6 +13,26 @@ See other requirements below...
 
 BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/file/d/128gq8aDUTKA_aT7SQsM9dkjA1EP1sosR/view?usp=sharing)
 
+## YOU MUST INSTALL (not needed if you only want to edit,inject,demux,plot RPU):
+
+- [python](https://www.python.org) (you might also have to install the version in windows store)
+  python libraries to install: opencv-python, colour-science, scikit-image, matplotlib, numpy, colour, headless, PyQt5. Open a command window and type for example: pip install scikit-image
+
+- [avisynthplus 64bit](https://avs-plus.net/) (not required if you just want to inject/edit DV)
+
+- [Vapoursynth](https://www.vapoursynth.com/) (not required if you dont encode videos)
+
+- [lavfilters](https://www.videohelp.com/software/LAV-Filters) (required for 3-1, 3-2 and 6-2 only)
+
+- [madvr](https://www.videohelp.com/software/madVR) (required for 3-1, 3-2 and 6-2 only)
+  
+- Make sure you have the latest [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed and if it complains about missing DLL, install m versions.
+
+Dolby tools can be found here: 
+
+- https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools
+
+EAE folder is only needed for 7.1 EC3 encoding. see links: https://github.com/R3S3t9999/DoVi_Scripts/blob/main/TOOLS%20%26%20INSTALLATION
 -------------------------------------------------------------------------------------------------------------------------
 
 [<img src="https://i.ibb.co/pr8FpLW/68747470733a2f2f692e6962622e636f2f514371337472672f50617970616c2d646f6e6174652e706e67.png">]( https://www.paypal.com/donate/?hosted_button_id=6ML5KUZG9XGB6)     -     [<img src="https://i.ibb.co/822cC77/627b94685a3e2ac874a7573c.png">]( https://www.youtube.com/channel/UCEYM1g3nkBNCpgPuyd4JL_g) 
@@ -25,28 +45,6 @@ BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/fi
 -------------------------------------------------------------------------------------------------------------------------
 
 [<img src="https://i.ibb.co/S6Pv7dC/Sts6T.gif">](https://github.com/R3S3t9999/DoVi_Scripts/releases)
-
--------------------------------------------------------------------------------------------------------------------------
-
-## YOU MUST INSTALL (not needed if you only want to edit,inject,demux,plot RPU):
-
-- [python](https://www.python.org)
-
-- [avisynthplus 64bit](https://avs-plus.net/)
-
-- [lavfilters](https://www.videohelp.com/software/LAV-Filters)
-
-- [madvr](https://www.videohelp.com/software/madVR)
-
-- [Vapoursynth](https://www.vapoursynth.com/)
-  
-- Make sure you have the latest [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed and if it complains about missing DLL, install older versions.
-
-Dolby tools can be found here: 
-
-- https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools
-
-EAE folder is only needed for 7.1 EC3 encoding. see links: https://github.com/R3S3t9999/DoVi_Scripts/blob/main/TOOLS%20%26%20INSTALLATION
 
 -------------------------------------------------------------------------------------------------------------------------
 
