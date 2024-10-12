@@ -13,7 +13,7 @@ See other requirements below...
 
 BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/file/d/128gq8aDUTKA_aT7SQsM9dkjA1EP1sosR/view?usp=sharing)
 
-## YOU MUST INSTALL (not needed if you only want to edit,inject,demux,plot RPU):
+## YOU MUST INSTALL:
 
 - [python](https://www.python.org) (you might also have to install the version in windows store)
   python libraries to install: opencv-python, colour-science, scikit-image, matplotlib, numpy, colour, headless, PyQt5. Open a command window and type for example: pip install scikit-image
