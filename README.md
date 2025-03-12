@@ -15,7 +15,7 @@ BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/fi
 
 ## YOU MUST INSTALL:
 
-- [python](https://www.python.org) (you might also have to install the version in [Windows Store](https://apps.microsoft.com/detail/9pjpw5ldxlz5?hl=en-us&gl=CA))
+- [python](https://www.python.org) (you also have to install the version in [Windows Store](https://apps.microsoft.com/detail/9pjpw5ldxlz5?hl=en-us&gl=CA))
   python libraries to install: opencv-python, colour-science, scikit-image, matplotlib, numpy, colour, headless, PyQt5. Open a command window and type for example: pip install scikit-image
 
 - [avisynthplus 64bit](https://avs-plus.net/) (not required if you just want to inject/edit DV)
@@ -150,6 +150,8 @@ MODE.B (5) = Can batch mux any DV source.
 - can play FEL + BL or Profile 5 DV in HDR10 or SDR with madVR+MPC (if your pc can handle it)
 - can export HDR heatmap and gamut visualization (FEL P5 HDR10 HLG SDR)
 - can tonemap to SDR or PQ
+- can create DV metadata video comparison [like this](https://drive.google.com/drive/folders/1g5I-z_sJmVu-SAIPNiiSlcdMiy2ka0mf)
+- can create FEL vs BL video comparison [like this](https://drive.google.com/drive/u/0/folders/1FS42T95TOSpoy4xtwUBIQmziCe_R_IKe)
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -222,13 +224,13 @@ MODE.B (5) = Can batch mux any DV source.
 
    ##  Interesting links:
 
-   - WEB vs BD comparisons: https://docs.google.com/spreadsheets/d/1jBIGF8XTVi9VmDBZ8a5hEyongYMCDlUiLHU9n1f_S74/edit#gid=0
+   - WEB vs BD comparisons: https://docs.google.com/spreadsheets/d/15i0a84uiBtWiHZ5CXZZ7wygLFXwYOd84/edit?gid=828864432#gid=828864432
 
-   - More comparisons: https://docs.google.com/spreadsheets/d/1jBIGF8XTVi9VmDBZ8a5hEyongYMCDlUiLHU9n1f_S74/edit#gid=917134052
+   - More comparisons: https://docs.google.com/spreadsheets/d/15i0a84uiBtWiHZ5CXZZ7wygLFXwYOd84/edit?gid=1226038728#gid=1226038728
 
    - HDR movies brightness plot: https://drive.google.com/drive/u/1/folders/154fBNllwOHL4Lckc7wDV8QKFJwFxnDt-
 
-   - DV device playback supports: https://docs.google.com/spreadsheets/d/1jBIGF8XTVi9VmDBZ8a5hEyongYMCDlUiLHU9n1f_S74/edit#gid=427220017
+   - DV device playback supports: https://docs.google.com/spreadsheets/d/15i0a84uiBtWiHZ5CXZZ7wygLFXwYOd84/edit?gid=845372636#gid=845372636
 
    - How to make P8 hybrid properly : https://www.youtube.com/watch?v=hVWZpat34oc
 
