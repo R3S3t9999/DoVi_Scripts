@@ -16,7 +16,7 @@ BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/fi
 ## YOU MUST INSTALL:
 
 - [python](https://www.python.org) (you also have to install the version in [Windows Store](https://apps.microsoft.com/detail/9pjpw5ldxlz5?hl=en-us&gl=CA))
-  python libraries to install: opencv-python, colour-science, scikit-image, matplotlib, numpy, colour, headless, PyQt5. Open a command window and type for example: pip install scikit-image
+  python libraries to install: opencv-python, colour-science, scikit-image, matplotlib, numpy, colour, opencv-python-headless , PyQt5. Open a command window and type for example: pip install scikit-image
 
 - [avisynthplus 64bit](https://avs-plus.net/) (not required if you just want to inject/edit DV)
 
