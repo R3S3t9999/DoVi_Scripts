@@ -20,9 +20,7 @@ BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/fi
 
 - [avisynthplus 64bit](https://avs-plus.net/) (not required if you just want to inject/edit DV)
 
-- [Vapoursynth](https://www.vapoursynth.com/) (not required if you dont encode videos)
-
-- [lavfilters](https://www.videohelp.com/software/LAV-Filters) (required for 3-1, 3-2 and 6-2 only)
+- [lavfilters](https://www.videohelp.com/software/LAV-Filters) (required for avspmod 3-1, 3-2 and 6-2 only)
 
 - [madvr](https://www.videohelp.com/software/madVR) (required for 3-1, 3-2 and 6-2 only)
   
