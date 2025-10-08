@@ -33,7 +33,7 @@ Dolby tools can be found here:
 EAE folder is only needed for 7.1 EC3 encoding. see links: https://github.com/R3S3t9999/DoVi_Scripts/blob/main/TOOLS%20%26%20INSTALLATION
 -------------------------------------------------------------------------------------------------------------------------
 
-[<img src="https://i.ibb.co/pr8FpLW/68747470733a2f2f692e6962622e636f2f514371337472672f50617970616c2d646f6e6174652e706e67.png">]( https://www.paypal.com/donate/?hosted_button_id=6ML5KUZG9XGB6)     -     [<img src="https://i.ibb.co/822cC77/627b94685a3e2ac874a7573c.png">]( https://www.youtube.com/channel/UCEYM1g3nkBNCpgPuyd4JL_g) 
+[<img src="https://i.imgur.com/AOj1jq3.png">]( https://www.paypal.com/donate/?hosted_button_id=6ML5KUZG9XGB6)     -     [<img src="https://i.imgur.com/07IBKqG.jpeg">]( https://www.youtube.com/channel/UCEYM1g3nkBNCpgPuyd4JL_g) 
 
 
 -------------------------------------------------------------------------------------------------------------------------
