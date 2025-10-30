@@ -1,6 +1,8 @@
 # DoVi_Scripts
 
-[Latest Version Download](https://github.com/R3S3t9999/DoVi_Scripts/releases) 
+[LATEST STABLE](https://github.com/R3S3t9999/DoVi_Scripts/releases) 
+
+[LATEST BETA](https://drive.google.com/file/d/128gq8aDUTKA_aT7SQsM9dkjA1EP1sosR/view?usp=sharing)
 
 [Tools Pack Google Drive Link](https://drive.google.com/file/d/1S4dqemaD8snI7QW29InG_XjI6VP0PNhk/view?usp=sharing)
 
