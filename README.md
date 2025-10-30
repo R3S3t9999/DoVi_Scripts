@@ -39,7 +39,7 @@ Dolby tools can be found here:
 
 - https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools
 
-EAE folder is only needed for 7.1 EC3 encoding. see links: https://github.com/R3S3t9999/DoVi_Scripts/blob/main/TOOLS%20%26%20INSTALLATION
+[EAE folder is only needed for 7.1 EC3 encoding.](https://github.com/R3S3t9999/DoVi_Scripts/blob/main/TOOLS%20%26%20INSTALLATION)
 -------------------------------------------------------------------------------------------------------------------------
 
 [<img src="https://i.imgur.com/AOj1jq3.png">]( https://www.paypal.com/donate/?hosted_button_id=6ML5KUZG9XGB6)     -     [<img src="https://i.imgur.com/07IBKqG.jpeg">]( https://www.youtube.com/channel/UCEYM1g3nkBNCpgPuyd4JL_g) 
