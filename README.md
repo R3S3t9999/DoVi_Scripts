@@ -1,28 +1,29 @@
 # DoVi_Scripts
 
-[<img src="https://i.ibb.co/yg83CcS/LATEST-VERSION.png">]( https://github.com/R3S3t9999/DoVi_Scripts/releases) [<img src="https://i.ibb.co/997VwQBm/Tools-pack.png">](https://drive.google.com/file/d/1S4dqemaD8snI7QW29InG_XjI6VP0PNhk/view?usp=sharing)
-
-PASSWORD FOR THE TOOLS PACK:  DoVi.Scripts
-
-INSTALLATION TUTORIAL: https://www.youtube.com/watch?v=6SLtsVDse2w
-
-SUPPORT: https://forum.doom9.org/showthread.php?t=185317
+[Latest Version Download](https://github.com/R3S3t9999/DoVi_Scripts/releases) 
+[Tools Pack Google Drive Link](https://drive.google.com/file/d/1S4dqemaD8snI7QW29InG_XjI6VP0PNhk/view?usp=sharing)
+[Tools Pack MEGA link](https://mega.nz/file/dTVWHSjB#xZRAOOWgi5R9TjNacOZV6FdC1NAWfKiKmQsSuZISrrc)
+PASSWORD FOR THE TOOLS PACK(case sensitive):  DoVi.Scripts
+[Youtube INSTALLATION TUTORIAL](https://www.youtube.com/watch?v=6SLtsVDse2w)
+[QUESTIONS & SUPPORT](https://forum.doom9.org/showthread.php?t=185317)
+BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/file/d/128gq8aDUTKA_aT7SQsM9dkjA1EP1sosR/view?usp=sharing)
 
 The tools pack doesnt include the [Dolby Vision tools](https://customer.dolby.com/content-creation-and-delivery/dolby-vision-professional-tools-v541) and [Easy Audio Encoder](https://github.com/R3S3t9999/DoVi_Scripts/blob/main/TOOLS%20%26%20INSTALLATION) folder.
 See other requirements below...
 
-BEFORE REPORTING A BUG PLEASE TRY [THE LATEST BETA.](https://drive.google.com/file/d/128gq8aDUTKA_aT7SQsM9dkjA1EP1sosR/view?usp=sharing)
-
 ## YOU MUST INSTALL:
 
-- [python](https://www.python.org) (you also have to install the version in [Windows Store](https://apps.microsoft.com/detail/9pjpw5ldxlz5?hl=en-us&gl=CA))
-  python libraries to install: opencv-python, colour-science, scikit-image, matplotlib, numpy, colour, opencv-python-headless , PyQt5. Open a command window and type for example: pip install scikit-image
+- [python 3.12](https://www.python.org/ftp/python/3.12.10/python-3.12.10-amd64.exe) 
 
-- [avisynthplus 64bit](https://avs-plus.net/) (not required if you just want to inject/edit DV)
+- [Python 3.12 Windows Store](https://apps.microsoft.com/detail/9ncvdn91xzqp?hl=en-US&gl=US)
+  
+- Python libraries to install: Open a command window and paste: pip install opencv-python colour-science scikit-image matplotlib numpy colour opencv-python-headless PyQt5
 
-- [lavfilters](https://www.videohelp.com/software/LAV-Filters) (required for avspmod 3-1, 3-2 and 6-2 only)
+- [avisynthplus 64bit](https://github.com/AviSynth/AviSynthPlus/releases/download/v3.7.5/AviSynthPlus_3.7.5_20250420_vcredist.exe) (not required if you just want to inject/edit DV)
 
-- [madvr](https://www.videohelp.com/software/madVR) (required for 3-1, 3-2 and 6-2 only)
+- [lavfilters](https://files.1f0.de/lavf/nightly/LAVFilters-0.80.0-9.exe) (required for avspmod 3-1, 3-2 and 6-2 only)
+
+- MadVR 113b (required for 3-1, 3-2 and 6-2 only) go in the dovi_scripts/tools/madvr folder and with admin rights, click on the install bat.
   
 - Make sure you have the latest [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed and if it complains about missing DLL, install m versions.
 
