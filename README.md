@@ -25,7 +25,7 @@ See other requirements below...
 
 - [Python 3.12 Windows Store](https://apps.microsoft.com/detail/9ncvdn91xzqp?hl=en-US&gl=US)
   
-- Python libraries to install: Open a command window and paste: pip install opencv-python colour-science scikit-image matplotlib numpy colour opencv-python-headless PyQt5
+- Python libraries to install: Open a command window and paste: '' pip install opencv-python colour-science scikit-image matplotlib numpy colour opencv-python-headless PyQt5 ''   **if the heatmap workflow still fails, install Python 3.9 as well.
 
 - [avisynthplus 64bit](https://github.com/AviSynth/AviSynthPlus/releases/download/v3.7.5/AviSynthPlus_3.7.5_20250420_vcredist.exe) (not required if you just want to inject/edit DV)
 
@@ -75,26 +75,28 @@ To ensure optimal performance, make sure that your path and script folder (conta
 
 # SCRIPTS MODES
 
-all the workflows are explained in this video: https://youtu.be/wb9191cExF8
+All the workflows are explained in this video: https://youtu.be/wb9191cExF8
 
 ## MODE.I (1) =
 
-- Can do all the extracting parsing, injecting, and editing of two input sources. (P8 hybrid maker)
+- Can do all the extracting, parsing, injecting, and editing of two input sources. (P8 hybrid maker)
 - Can easily resynchronize RPUs, edit parameters like L5/L6, convert the profile to P8. (P8 hybrid maker)
-- Can also edit a single input as well processing multiple files in a folder.
+- Can also edit a single input as well as process multiple files in a folder.
 - Input can be anything : MKV/MP4/HEVC/TS/M2TS/RPU/XML/JSON HDR10+).
-- Can resync/inJect HDR10plus / DV
+- Can resync/inject HDR10plus and Dolby Vision (any profile)
 - Can quickly get info from any DV source (fel or mel, profile, l1/l2/l5 etc...)
+- Can quickly detect FEL expanded brightness
 - Can use external json files for advanced edits.
 - Can validate metadata with Official Dolby Metafier
 - Can convert RPU to XML
-- can remove cmv4.0
+- Can disable DV tone mapping
+- Can remove cmv4.0
   
 --------------------------------------------------------------------------------------------------------------------------
 
 ## MODE.F (2) =
 
-- Can verify the RPU synchronization and export scene cut to a text file
+- Can verify the RPU synchronization and export the scene cuts to a text file
 - Can remove HDR10plus or DV
 - Can overwrite or remove L2 trims
 - Can export EDL timeline DV or HDR10plus for Resolve
@@ -110,8 +112,7 @@ all the workflows are explained in this video: https://youtu.be/wb9191cExF8
 - Can convert any HDR10plus/HDR10/HLG source to shot-by-shot or frame-by-frame cmv4.0 DoVi.  
 - Official Dolby cm_analyze.exe (best) or with hdr10plus to dv or madVR to dv
 - can use external shot list for cm_analyze generation
-- L1 analysis tuning available
-- Also supports generating new metadata for a P5 DV video
+- CMv4.0 L1 analysis tuning available
 - can batch generate with external files for L5/ MD, and shot list
 - Shot list source is selected in this order:
 
@@ -131,7 +132,7 @@ all the workflows are explained in this video: https://youtu.be/wb9191cExF8
 
 ------------------------------------------------------------------------------------------------------------------------
 
-MODE.B (5) = Can batch mux any DV source.
+MODE.B (5) = Can batch-mux any DV source.
 
 - MKV/MP4 to TS
 - MKV/TS to MP4
@@ -142,13 +143,14 @@ MODE.B (5) = Can batch mux any DV source.
 
 - Can batch plot DoVi Level 1,2,3,4,5,6,8 and hdr10, hdr10plus.
 - Can plot video bitrate
-- Can plot audio waveforms, bed channels or object based atmos channels
+- Can plot audio waveforms, bed channels or object-based atmos channels
 
 ----------------------------------------------------------------------------------------------------------------------
 
 ## MODE.S (7) =
 
 - can export 16bits RGB  HDR or SDR tone mapped screenshots (FEL P7 P8 P5 HDR10 SDR).
+- can export SDR screenshots from a Dolby Vision 100nits trim pass (requires DEE)
 - fully automated frame accurate or manual modes and up to 20 input at once
 - can play FEL + BL or Profile 5 DV in HDR10 or SDR with madVR+MPC (if your pc can handle it)
 - can export HDR heatmap and gamut visualization (FEL P5 HDR10 SDR)
@@ -165,6 +167,7 @@ MODE.B (5) = Can batch mux any DV source.
 - can encode any HDR10/HLG/FELP7/P5 source to HDR or SDR (x265, x264 or NVenc or prores)
 - can deliver any Dolby Vision trim passes (Official Dolby cm_offline.exe)
 - can encode profile 5 DV (requires DEE)
+- can encode profile 7 DV MEL or FEL without BL mapping or mapping to 600/1000nits (requires DEE)
   
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -177,7 +180,7 @@ MODE.B (5) = Can batch mux any DV source.
 - Can tonemap image based pgs(.sup) subtitles to different brightness
 - Can fix or change fps bitstream, color range
 - Can change srt text subtitles framerate
-- Can find frame difference between two sources
+- Can find the frame difference between two sources
 - Can edit static HDR10 metadata
 
 ---------------------------------------------------------------------------------------------------------------------
