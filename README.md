@@ -25,7 +25,7 @@ See other requirements below...
 
 - [Python 3.12 Windows Store](https://apps.microsoft.com/detail/9ncvdn91xzqp?hl=en-US&gl=US)
   
-- Python libraries to install: Open a command window and paste: '' pip install opencv-python colour-science scikit-image matplotlib numpy colour opencv-python-headless PyQt5 ''   **if the heatmap workflow still fails, install Python 3.9 as well.
+- Python libraries to install: Open a command window and paste: '' pip install opencv-python colour-science scikit-image matplotlib numpy colour opencv-python-headless PyQt5 OpenImageIO ''   **if the heatmap workflow still fails, install Python 3.9 as well.
 
 - [avisynthplus 64bit](https://github.com/AviSynth/AviSynthPlus/releases/download/v3.7.5/AviSynthPlus_3.7.5_20250420_vcredist.exe) (not required if you just want to inject/edit DV)
 
