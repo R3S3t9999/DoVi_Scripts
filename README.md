@@ -6,7 +6,7 @@
 
 [Tools Pack Google Drive Link](https://drive.google.com/file/d/1S4dqemaD8snI7QW29InG_XjI6VP0PNhk/view?usp=sharing)
 
-[Tools Pack MEGA link](https://mega.nz/file/1D8xBbLT#7kwtEddnxvKHTFHsSqlqQAXPsGYO6VyY0E6WTFeuI7o)
+[Tools Pack MEGA link](https://mega.nz/file/RCsWmAYC#rSF_IdSVhHx-G8U0F3EnaLXkt9eNLzqQ9qOmPggqrmc)
 
 PASSWORD FOR THE TOOLS PACK(case sensitive):  DoVi.Scripts
 
@@ -84,13 +84,13 @@ All the workflows are explained in this video: https://youtu.be/wb9191cExF8
 - Can also edit a single input as well as process multiple files in a folder.
 - Input can be anything : MKV/MP4/HEVC/TS/M2TS/RPU/XML/JSON HDR10+).
 - Can resync/inject HDR10plus and Dolby Vision (any profile)
-- Can quickly get info from any DV source (fel or mel, profile, l1/l2/l5 etc...)
+- Can quickly get info from any DV source (fel or mel, profile, l1/l2/l5, etc...)
 - Can quickly detect FEL expanded brightness
 - Can use external json files for advanced edits.
 - Can validate metadata with Official Dolby Metafier
 - Can convert RPU to XML
 - Can disable DV tone mapping
-- Can remove cmv4.0
+- Can remove CMV4.0 or upgrade a CMV2.9 rpu to 4.0
   
 --------------------------------------------------------------------------------------------------------------------------
 
@@ -99,7 +99,7 @@ All the workflows are explained in this video: https://youtu.be/wb9191cExF8
 - Can verify the RPU synchronization and export the scene cuts to a text file
 - Can remove HDR10plus or DV
 - Can overwrite or remove L2 trims
-- Can export EDL timeline DV or HDR10plus for Resolve
+- Can export EDL timeline DV, or HDR10plus for Resolve
 - can transfer any metadata level to another rpu
 - can export L5 config files
 - can batch info your whole collection quickly
@@ -110,8 +110,8 @@ All the workflows are explained in this video: https://youtu.be/wb9191cExF8
 ## MODE.H (3) =
 
 - Can convert any HDR10plus/HDR10/HLG source to shot-by-shot or frame-by-frame cmv4.0 DoVi.  
-- Official Dolby cm_analyze.exe (best) or with hdr10plus to dv or madVR to dv
-- can use external shot list for cm_analyze generation
+- Official Dolby cm_analyze.exe (best) or Davinci Resolve or with hdr10plus to dv or madVR to dv
+- can use external shot list for cm_analyze/resolve DV generation
 - CMv4.0 L1 analysis tuning available
 - can batch generate with external files for L5/ MD, and shot list
 - Shot list source is selected in this order:
@@ -122,7 +122,7 @@ All the workflows are explained in this video: https://youtu.be/wb9191cExF8
 
 3- internal hdr10plus
 
-4- if no dynamic metadata is found, it uses madvr to generate a shot list which means that if your source doesn't have any dynamic metadata, you can use the generated RPU from your previous 6-2 workflow.
+4- If no dynamic metadata is found, it uses madvr to generate a shot list, which means that if your source doesn't have any dynamic metadata, you can use the generated RPU from your previous 6-2 workflow.
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -143,7 +143,7 @@ MODE.B (5) = Can batch-mux any DV source.
 
 - Can batch plot DoVi Level 1,2,3,4,5,6,8 and hdr10, hdr10plus.
 - Can plot video bitrate
-- Can plot audio waveforms, bed channels or object-based atmos channels
+- Can plot audio waveforms, bed channels, or object-based atmos channels
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -152,10 +152,12 @@ MODE.B (5) = Can batch-mux any DV source.
 - can export 16bits RGB  HDR or SDR tone mapped screenshots (FEL P7 P8 P5 HDR10 SDR).
 - can export SDR screenshots from a Dolby Vision 100nits trim pass (requires DEE)
 - fully automated frame accurate or manual modes and up to 20 input at once
-- can play FEL + BL or Profile 5 DV in HDR10 or SDR with madVR+MPC (if your pc can handle it)
 - can export HDR heatmap and gamut visualization (FEL P5 HDR10 SDR)
 - can create DV metadata video comparison [like this](https://drive.google.com/drive/folders/1g5I-z_sJmVu-SAIPNiiSlcdMiy2ka0mf)
-- can create FEL vs BL video comparison [like this](https://drive.google.com/drive/u/0/folders/1FS42T95TOSpoy4xtwUBIQmziCe_R_IKe)
+- can create DV FEL vs BL video comparison [like this](https://drive.google.com/drive/u/0/folders/1FS42T95TOSpoy4xtwUBIQmziCe_R_IKe)
+- can create HDR video comparison from two sources.
+- can play FEL + BL or Profile 5 DV in HDR10 or SDR with madVR+MPC (if your pc can handle it) (no dynamic metadata processing)
+- can play DV with dynamic metadata(and FEL) processing in MPV.
 
 ---------------------------------------------------------------------------------------------------------------------
 
@@ -164,18 +166,19 @@ MODE.B (5) = Can batch-mux any DV source.
 - can convert audio (DDP up to 7.1 and Add silent or encoded core to TrueHD)
 - can encode TrueHD Atmos to DD+ Atmos (requires DEE)
 - can encode bake fel to HDR10/P8 with dovibaker+x265 or NVenc
-- can encode any HDR10/HLG/FELP7/P5 source to HDR or SDR (x265, x264 or NVenc or prores)
+- can encode any HDR10/HLG/FELP7/P5/prores source to HDR or SDR (x265, x264 or NVenc or prores)
 - can deliver any Dolby Vision trim passes (Official Dolby cm_offline.exe)
 - can encode profile 5 DV (requires DEE)
 - can encode profile 7 DV MEL or FEL without BL mapping or mapping to 600/1000nits (requires DEE)
+- can create video loop sample, [examples.](https://drive.google.com/drive/u/0/folders/1qCyCTmhEVZjdY5O8gNVFna-nnkVQkhI_)
   
 ---------------------------------------------------------------------------------------------------------------------
 
 ## MODE.M (9) =
 
 - can find bd playlist
-- can make 5 min samples. timestamp configurable at line: 109
-- can quickly find a video framecount
+- can make 5-minute samples. timestamp configurable at line: 109
+- can quickly find a video frame count
 - can quickly find an audio dialnorm value
 - Can tonemap image based pgs(.sup) subtitles to different brightness
 - Can fix or change fps bitstream, color range
