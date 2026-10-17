@@ -11,7 +11,7 @@ DoVi_Scripts helps automate common tasks such as Dolby Vision metadata extractio
 | **Latest stable release** | [GitHub Releases](https://github.com/R3S3t9999/DoVi_Scripts/releases) |
 | **Latest beta** | [Download beta](https://drive.google.com/file/d/128gq8aDUTKA_aT7SQsM9dkjA1EP1sosR/view?usp=sharing) |
 | **Tools pack — Google Drive** | [Download](https://drive.google.com/file/d/1S4dqemaD8snI7QW29InG_XjI6VP0PNhk/view?usp=sharing) |
-| **Tools pack — MEGA** | [Download](https://mega.nz/file/RCsWmAYC#rSF_IdSVhHx-G8U0F3EnaLXkt9eNLzqQ9qOmPggqrmc) |
+| **Tools pack — MEGA** | [Download](https://mega.nz/file/VGlzUaCK#mxd9OIxuc7-DFFRCU_huVOhwATR34xx-gMBHna1vRp0) |
 | **Installation tutorial** | [Watch on YouTube](https://youtu.be/wb9191cExF8) |
 | **Questions and support** | [Doom9 forum thread](https://forum.doom9.org/showthread.php?t=185317) |
 
